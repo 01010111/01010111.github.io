@@ -1,0 +1,20 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+p
+{
+    margin: 20px 0;
+}
+
+.content_container
+{
+    width: 400px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
