@@ -1,8 +1,56 @@
+@media screen and (max-width: 480px)
+{
+    .content_container
+    {
+        padding: 50px;
+    }
+    
+    h1 img
+    {
+        margin: -60px -50px 0px -50px;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 480px) 
+{
+    .content_container
+    {
+        width: 480px;
+        margin: 50px auto;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 img 
+    {
+        width: 580px;
+        margin: -60px -50px 0px -50px;
+        border-radius: 20px 20px 0 0;     
+    }
+}
+
 * 
 {
     margin: 0;
     padding: 0;
     font-family: monospace;
+    font-size: 16px;
+}
+
+a
+{
+    color: #f04;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+a:hover
+{
+    color: #fa4;
+    transition-duration: 0.2s;
 }
 
 p
@@ -10,11 +58,68 @@ p
     margin: 20px 0;
 }
 
-.content_container
+h1
 {
-    width: 400px;
-    margin: 50px auto;
-    padding: 50px;
-    border-radius: 50px;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    font-size: 1.5em;
 }
+
+h1 a
+{
+    color: #fff;
+    background-color: #F04;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+h1 a:hover
+{
+    color: #fff;
+    background-color: #fa4;
+    transition-duration: 0.2s;
+}
+
+h2
+{
+    margin: 10px 0;
+    font-size: 1.25em;
+}    
+
+h3
+{
+    margin: 10px 0;
+    font-size: 1.1em;
+}    
+
+pre
+{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+pre:hover
+{
+    background-color: #eee;
+    display: block;
+    float: left;
+    width: auto;
+    margin: 0px 0px 20px 0px;
+}
+
+code
+{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+blockquote p
+{
+    font-size: 1.2em;
+    font-style: italic;
+}
+
