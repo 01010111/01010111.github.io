@@ -13,6 +13,6 @@ Check them out please - [Mobelux](mobelux.com)
 If you wanna get in touch,  
 maybe make some games or something,  
 maybe sing some karaoke or something,  
-[Do it here](https://twitter.com/x01010111) [or here](will@01010111.com)
+[Do it here](https://twitter.com/x01010111) [or here](mailto:will@01010111.com)
 
 ![check back later maybe](fire-under-construction-animation.gif)
