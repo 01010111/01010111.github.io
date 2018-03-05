@@ -23,12 +23,12 @@ Just look at how stupid this is, this is the markup for `pages/index.html`:
 
 <html>
 
-    <head>
+	<head>
 		<script src='../js/site.js'></script>
 		<script>Site.get_head();</script>
 	</head>
 	
-    <body>
+	<body>
 		<script>Site.get_content('index')</script>
 	</body>
 	

@@ -1,16 +1,16 @@
 @media screen and (max-width: 680px)
 {
 
-    .content_container
-    {
+	.content_container
+	{
 		background: #FFF;
 		padding: 50px;
-    }
-    
-    h1 img
-    {
-        margin: -60px -50px 0px -50px;
-        width: 100vw;
+	}
+	
+	h1 img
+	{
+		margin: -60px -50px 0px -50px;
+		width: 100vw;
 	}
 
 }
@@ -18,21 +18,21 @@
 @media screen and (min-width: 680px) 
 {
 
-    .content_container
-    {
+	.content_container
+	{
 		background: #FFF;
-        width: 580px;
-        margin: 60px auto;
-        padding: 50px;
-        border-radius: 20px;
-        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
-    }
+		width: 580px;
+		margin: 60px auto;
+		padding: 50px;
+		border-radius: 20px;
+		box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+	}
 
-    h1 img 
-    {
-        width: 680px;
-        margin: -60px -50px 0px -50px;
-        border-radius: 20px 20px 0 0;     
+	h1 img 
+	{
+		width: 680px;
+		margin: -60px -50px 0px -50px;
+		border-radius: 20px 20px 0 0;	 
 	}
 	
 	body
@@ -45,9 +45,9 @@
 * 
 {
 	margin: 0;
-    padding: 0;
-    font-family: monospace;
-    font-size: 16px;
+	padding: 0;
+	font-family: monospace;
+	font-size: 16px;
 }	
 
 .navbar
@@ -63,63 +63,63 @@
 
 .navbar:hover
 {
-    background-color: #FA4;
-    transition-duration: 0.2s;
+	background-color: #FA4;
+	transition-duration: 0.2s;
 }
 
 a
 {
-    color: #F04;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.2s;
+	color: #F04;
+	text-decoration: none;
+	font-weight: bold;
+	transition-duration: 0.2s;
 }
 
 a:hover
 {
-    color: #FA4;
-    transition-duration: 0.2s;
+	color: #FA4;
+	transition-duration: 0.2s;
 }
 
 p
 {
-    margin: 20px 0;
+	margin: 20px 0;
 }
 
 h1
 {
-    margin: 10px 0;
-    font-size: 1.5em;
+	margin: 10px 0;
+	font-size: 1.5em;
 }
 
 h1 a
 {
-    color: #FFF;
-    background-color: #F04;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    border-radius: 10px;
-    transition-duration: 0.2s;
+	color: #FFF;
+	background-color: #F04;
+	padding: 10px;
+	display: block;
+	text-align: center;
+	border-radius: 10px;
+	transition-duration: 0.2s;
 }
 
 h1 a:hover
 {
-    color: #FFF;
-    background-color: #FA4;
-    transition-duration: 0.2s;
+	color: #FFF;
+	background-color: #FA4;
+	transition-duration: 0.2s;
 }
 
 h2
 {
-    margin: 10px 0;
-    font-size: 1.25em;
-}    
+	margin: 10px 0;
+	font-size: 1.25em;
+}	
 
 h3
 {
-    margin: 10px 0;
-    font-size: 1.1em;
+	margin: 10px 0;
+	font-size: 1.1em;
 }
 
 h4
@@ -138,8 +138,8 @@ pre
 	position: relative;
 	color: #FFF;
 	background: #000;
-    padding: 20px;
-    border-radius: 20px;
+	padding: 20px;
+	border-radius: 20px;
 	overflow: hidden;
 }
 
@@ -147,8 +147,8 @@ pre:hover
 {
 	color: #FFF;
 	background: #222;
-    display: block;
-    float: left;
+	display: block;
+	float: left;
 	width: auto;
 	min-width: 100%;
 	margin: 0px 0px 20px 0px;
@@ -161,8 +161,8 @@ code
 
 blockquote p
 {
-    font-size: 1.2em;
-    font-style: italic;
+	font-size: 1.2em;
+	font-style: italic;
 }
 
 .copy_tooltip

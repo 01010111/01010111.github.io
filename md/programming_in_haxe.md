@@ -75,10 +75,10 @@ A class is an organized structure of data. It consists of a name, a path, and ze
 class Test 
 {
 
-    static function main()
+	static function main()
 	{
-        trace("Haxe is great!");
-    }
+		trace("Haxe is great!");
+	}
 
 }
 ```
@@ -129,14 +129,14 @@ Let's add some of these to our code!
 class Test 
 {
 
-    static function main()
+	static function main()
 	{
 		var alive:Bool = true;
 		var age:Int = 70;
 		var name:String = 'Buck';
 
-        trace("Haxe is great!");
-    }
+		trace("Haxe is great!");
+	}
 
 }
 ```
@@ -181,11 +181,11 @@ Now let's go back up to the **Test** class and clean things up a little bit:
 class Test 
 {
 
-    static function main()
+	static function main()
 	{
 		var buck:Person = new Person(true, 70, 'Buck');
 		trace('$name is $age years old.');
-    }
+	}
 
 }
 ```
@@ -362,10 +362,10 @@ That's cool and all, but we can't really do anything with it yet. We could add i
 class Test 
 {
 
-    static function main()
+	static function main()
 	{
 		hello();
-    }
+	}
 
 	static function hello()
 	{
@@ -404,19 +404,19 @@ You can see that we added what type of value or object we expect the function to
 Let's also change the **main()** function to trace that returned value!
 
 ```haxe
-    static function main()
+	static function main()
 	{
 		trace(hello('Will')); // "hello Will"
-    }
+	}
 ```
 
 So let's quickly dissect the following function:
 
 ```haxe
 	public static function get_random_number(min:Float, max:Float):Float
-    {
-        return min + Math.random() * (max - min);
-    }
+	{
+		return min + Math.random() * (max - min);
+	}
 ```
 
 You don't have to worry about what that code does for now (although I'd give it a shot!) - let's just look at how it's put together.
