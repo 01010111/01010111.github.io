@@ -40,7 +40,9 @@
 		background: linear-gradient(to right, rgb(236, 241, 243), rgb(252, 253, 255));
 	}
 
-}	
+}
+
+/* Reset */
 
 * 
 {
@@ -48,24 +50,9 @@
 	padding: 0;
 	font-family: monospace;
 	font-size: 16px;
-}	
-
-.navbar
-{
-	color: #FFF;
-	width: 100vw;
-	background-color: #F04;
-	padding: 10px 0;
-	position: fixed;
-	top: 0%;
-	z-index: 100;
 }
 
-.navbar:hover
-{
-	background-color: #FA4;
-	transition-duration: 0.2s;
-}
+/* Elements */
 
 a
 {
@@ -86,10 +73,33 @@ p
 	margin: 20px 0;
 }
 
-h1
+h1, h2, h3, h4
 {
 	margin: 10px 0;
+}
+
+h1
+{
 	font-size: 1.5em;
+}
+
+h2, h4
+{
+	font-size: 1.25em;
+}	
+
+h3
+{
+	font-size: 1.1em;
+}
+
+h4
+{
+	color: #28F;
+	background: #EEE;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
 }
 
 h1 a
@@ -100,7 +110,6 @@ h1 a
 	display: block;
 	text-align: center;
 	border-radius: 10px;
-	transition-duration: 0.2s;
 }
 
 h1 a:hover
@@ -108,29 +117,6 @@ h1 a:hover
 	color: #FFF;
 	background-color: #FA4;
 	transition-duration: 0.2s;
-}
-
-h2
-{
-	margin: 10px 0;
-	font-size: 1.25em;
-}	
-
-h3
-{
-	margin: 10px 0;
-	font-size: 1.1em;
-}
-
-h4
-{
-	margin: 10px 0;
-	font-size: 1.25em;
-	color: #28F;
-	background: #EEE;
-	padding: 10px;
-	border-radius: 10px;
-	text-align: center;
 }
 
 pre
@@ -141,6 +127,7 @@ pre
 	padding: 20px;
 	border-radius: 20px;
 	overflow: hidden;
+	margin: 0px 0px 20px 0px;
 }
 
 pre:hover
@@ -151,7 +138,6 @@ pre:hover
 	float: left;
 	width: auto;
 	min-width: 100%;
-	margin: 0px 0px 20px 0px;
 }
 
 code
@@ -163,6 +149,47 @@ blockquote p
 {
 	font-size: 1.2em;
 	font-style: italic;
+}
+
+ul
+{
+	margin: 15px;
+}
+
+li
+{
+	margin: 5px;
+}
+
+li p
+{
+	font-size: 0.9em;
+}
+
+hr
+{
+	margin: 50px 0;
+	border-style: dashed;
+	border-color: #EEE;
+}
+
+/* Classes */
+
+.navbar
+{
+	color: #FFF;
+	width: 100vw;
+	background-color: #F04;
+	padding: 10px 0;
+	position: fixed;
+	top: 0%;
+	z-index: 100;
+}
+
+.navbar:hover
+{
+	background-color: #FA4;
+	transition-duration: 0.2s;
 }
 
 .copy_tooltip
@@ -194,28 +221,6 @@ pre:hover .copy_tooltip
 {
 	background: #FA4 !important;
 	opacity: 1 !important;
-}
-
-ul
-{
-	margin: 15px;
-}
-
-li
-{
-	margin: 5px;
-}
-
-li p
-{
-	font-size: 0.9em;
-}
-
-hr
-{
-	margin: 50px 0;
-	border-style: dashed;
-	border-color: #EEE;
 }
 
 :target {
