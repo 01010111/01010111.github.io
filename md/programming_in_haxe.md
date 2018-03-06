@@ -5,7 +5,7 @@ Hi! This is a quick primer in programming in Haxe, an open source strictly typed
 
 I'll also be going over some basic computer science, so don't worry if you've never coded anything before!
 
-To follow along with this article, there's no need to download anything! Just go to [try.haxe.org](https://try.haxe.org/) and follow along!
+To follow along with this article, there's no need to download anything! Just go to [try.haxe.org](https://try.haxe.org/) and experiment along with the lessons!
 
 ## Table of Contents
 
