@@ -19,7 +19,9 @@ Check that out please - [Allie Bones](http://alliebones.com)
 
 If you wanna get in touch,  
 maybe make some games or something,  
-maybe sing some karaoke or something,  
+maybe sing some karaoke or something,
 
-# [Do it here](https://twitter.com/x01010111) 
-# [or here](mailto:will@01010111.com)
+Contact me: 
+
+# [on Twitter](https://twitter.com/x01010111) 
+# [on Email](mailto:will@01010111.com)
