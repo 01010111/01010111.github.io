@@ -223,6 +223,15 @@ pre:hover .copy_tooltip
 	opacity: 1 !important;
 }
 
-:target {
+.external_link
+{
+	background-image: url('../images/external_link.svg');
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 16px;
+}
+
+:target
+{
 	padding-top: 100px;
 }

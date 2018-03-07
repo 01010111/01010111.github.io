@@ -62,6 +62,7 @@ Site.get_content = function (page)
 Site.parsed_callback = function ()
 {
 	this.make_code_copyable();
+	this.give_external_links_icon();
 };
 
 /** 
@@ -89,10 +90,23 @@ Site.add_copy_button_to_code_block = function (code)
 		document.body.appendChild(text);
 		text.select();
 		document.execCommand('Copy');
-		console.log(text.value);
 		text.remove();
 	};
 };
+
+Site.give_external_links_icon = function ()
+{
+	var h1s = document.getElementsByTagName('h1');
+	for (var i = 0; i < h1s.length; i++)
+	{
+		var header = h1s[i];
+		var link = h1s[i].getElementsByTagName('a')[0];
+		if (link && link.href.indexOf('01010111') === -1) 
+		{
+			link.classList.add('external_link');
+		}
+	}
+}
 
 function Util(){}
 	
