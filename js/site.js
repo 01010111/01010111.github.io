@@ -99,12 +99,11 @@ Site.give_external_links_icon = function ()
 	var h1s = document.getElementsByTagName('h1');
 	for (var i = 0; i < h1s.length; i++)
 	{
-		var header = h1s[i];
 		var link = h1s[i].getElementsByTagName('a')[0];
-		if (link && link.href.indexOf('01010111') === -1) 
-		{
-			link.classList.add('external_link');
-		}
+		if (!link) continue;
+		if (link && link.href.indexOf('01010111.com') !== -1) continue;
+		link.classList.add('external_link');
+		if (link && link.href.indexOf('youtube') !== -1) link.classList.add('youtube');
 	}
 }
 
