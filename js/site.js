@@ -63,6 +63,8 @@ Site.parsed_callback = function ()
 {
 	this.make_code_copyable();
 	this.give_external_links_icon();
+	this.create_twitter_links();
+	this.add_back_to_top_icon();
 };
 
 /** 
@@ -104,6 +106,39 @@ Site.give_external_links_icon = function ()
 		if (link && link.href.indexOf('01010111.com') !== -1) continue;
 		link.classList.add('external_link');
 		if (link && link.href.indexOf('youtube') !== -1) link.classList.add('youtube');
+	}
+}
+
+Site.create_twitter_links = function ()
+{
+	var paragraphs = document.getElementsByTagName('p');
+	
+	for (let i = 0; i < paragraphs.length; i++)
+	{
+		if (paragraphs[i].innerHTML.indexOf('@') === -1) continue;
+		var words = paragraphs[i].innerHTML.split(' ');
+		for (var j = 0; j < words.length; j++)
+		{
+			var word = words[j];
+			if (word.charAt(0) === '@')
+			{
+				var replacement = '<a href = "http://twitter.com/' + word.slice(1) +  '">' + word + '</a>';
+				document.body.innerHTML = document.body.innerHTML.replace(word, replacement);
+			}
+		}
+	}
+}
+
+Site.add_back_to_top_icon = function ()
+{
+	var h3s = document.getElementsByTagName('h3');
+	for (var i = 0; i < h3s.length; i++)
+	{
+		if (h3s[i].getElementsByTagName('a').length > 0)
+		{
+			console.log(h3s[i]);
+			h3s[i].classList.add('back_to_top');
+		}
 	}
 }
 

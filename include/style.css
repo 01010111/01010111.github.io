@@ -80,6 +80,19 @@ h4
 	text-align: center;
 }
 
+h3 a
+{
+	font-size: 0.75em;
+	text-align: left;
+	color: #28F;
+	margin-left: 20px;
+}
+
+h3 a:hover
+{
+	color: #28F;
+}
+
 h1 a
 {
 	color: #FFF;
@@ -194,5 +207,13 @@ pre:hover .copy_tooltip
 	background-size: 16px;
 }
 
+.back_to_top
+{
+	background-image: url('../images/back_to_top.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 12px;
+}
+
 .youtube { background-image: url('../images/external_link_youtube.svg'); }
-:target { padding-top: 100px; }
+:target { padding-top: 70px; }

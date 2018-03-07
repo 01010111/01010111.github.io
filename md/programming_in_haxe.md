@@ -65,6 +65,8 @@ You can create comments in your code with two slashes (**//**) - your program wi
 
 If that looks like gibberish to you now, don't worry! In the next hour or so you'll be able to write something way more interesting!
 
+### [Back to top](#programming-in-haxe)
+
 ---
 
 ## Part Two - Classes
@@ -112,6 +114,8 @@ Notice that blocks of code are enclosed between two **{ curly brackets }**, and 
 
 Classes can have another kind of member as well - the **variable**!
 
+### [Back to top](#programming-in-haxe)
+
 ---
 
 ## Part Three - Variables
@@ -147,7 +151,9 @@ Now, let's change the trace call to use some of those variables!
 		trace('$name is $age years old.');
 ```
 
-Did you notice how some of those words have a dollar sign before them? Haxe has a feature called **String interpolation** that allows you to access variables or use expressions within a String. This only works if the String is using 'single quotation marks' instead of "double".
+Did you notice how some of those words have a dollar sign before them? Haxe has a feature called _String Interpolation_ that allows you to access variables or use expressions within a String. This only works if the String is using 'single quotation marks' instead of "double".
+
+### [Back to top](#programming-in-haxe)
 
 ---
 
@@ -155,7 +161,7 @@ Did you notice how some of those words have a dollar sign before them? Haxe has 
 
 An object is an _instance_ of a class. You could think of a class as the blueprints to make an object.
 
-Let's organize all of that personal info into a class called Person. At the bottom of your code, add the following:
+Let's organize all of that personal info into a class called **Person**. At the bottom of your code, add the following:
 
 ```haxe
 class Person
@@ -208,7 +214,7 @@ Press **Build + Run** and...uh...that looks weird.
 "{ alive : true, age : 70, name : Buck }.name is { alive : true, age : 70, name : Buck }.age years old."
 ```
 
-What is happening here? Well, there are some things you need to keep in mind when you do String Interpolation in Haxe! Any time you need to add an expression or access variables in other classes, you'll have to wrap it in some **{ curly brackets }**!
+What is happening here? Well, there are some things you need to keep in mind when you do _String Interpolation_ in Haxe! Any time you need to add an expression or access variables in other classes, you'll have to wrap it in some **{ curly brackets }**!
 
 ```haxe
 		trace('${buck.name} is ${buck.age} years old.');
@@ -235,6 +241,8 @@ and functions like
 - **jump()**
 - **crouch()**
 - **run()**
+
+### [Back to top](#programming-in-haxe)
 
 ---
 
@@ -343,6 +351,8 @@ class RaceCar
 
 See how we can access those constant variables and functions within other classes without having to create instances of **Constants** and **Util**? This is nice because if we want to change the **max_speed** across our entire program, we can just change it in one place!
 
+### [Back to top](#programming-in-haxe)
+
 ---
 
 ## Part Six - Functions
@@ -390,7 +400,7 @@ We just added a parameter for our function called **to_who**. A parameter is lik
 		hello('Will') // "hello Will" - also, the height of loneliness.
 ```
 
-What if we wanted our function to just give us a String back instead of using the trace function? That's where a **return** comes in handy. Functions can return a value when they are run, which can be very useful! Let's change our hello() function to return the text instead of tracing it to the console.
+What if we wanted our function to just give us a String back instead of using the **trace()** function? That's where a **return** comes in handy. Functions can return a value when they are run, which can be very useful! Let's change our **hello()** function to return the text instead of tracing it to the console.
 
 ```haxe
 	static function hello(to_who:String = 'world'):String
@@ -430,6 +440,8 @@ You don't have to worry about what that code does for now (although I'd give it 
 - Then you have the function's body, encapsulated between two **{ curly brackets }**. Notice it includes the **return** keyword, followed by an equation that will always return a Float!
 
 Let's move on to another kind of code block!
+
+### [Back to top](#programming-in-haxe)
 
 ---
 
@@ -503,9 +515,9 @@ That works fine, but if you look at it, we're _duplicating_ the code **sub_total
 	}
 ```
 
-The above code will check to see if the customer is elegible for a senior discount, **or** if it's a Tuesday. In either case, it will apply the discount.
+The above code will check to see if the customer is elegible for a senior discount, _or_ if it's a Tuesday. In either case, it will apply the discount.
 
-Now our code is looking nice and elegant! Let's imagine that the manager of our establishment is in a bad mood and want's to only give the senior discount on Tuesdays. we can use the and operator, two ampersands (**&&**), to check if both one expressing **and** the other are true!
+Now our code is looking nice and elegant! Let's imagine that the manager of our establishment is in a bad mood and want's to only give the senior discount on Tuesdays. we can use the and operator, two ampersands (**&&**), to check if both one expressing _and_ the other are true!
 
 ```haxe
 	function apply_senior_discount(customer:Person, sub_total:Float, day:String):Float
@@ -542,6 +554,8 @@ To check to see if something **isn't** true, you can use an exclamation mark (**
 
 Notice that an if statement always expects a Bool. You can't write something like **if (1)** because **1** is an Int.
 
+### [Back to top](#programming-in-haxe)
+
 ---
 
 ## Part Eight - Loops
@@ -576,9 +590,9 @@ Let's use a **while()** loop to do it all!
 
 Yay! Laziness can be a virtue if you use it correctly! Let's see what is going on here!
 
-- **var i:Int = 99;** - First we set up a variable that we'll use as a counter. I like to use **i** in these situations, because i can be short for **iterator**.
+- **var i:Int = 99;** - First we set up a variable that we'll use as a counter. I like to use **i** in these situations, because i can be short for _iterator_.
 - **while(i > 0)** - This is similar to saying "if (i > 0)", but it will continue doing the block of code _forever_ until the expression is not true. This can be dangerous if the expression you're checking has a chance to never be false!
-- **trace('$i bottles of...on the wall!');** - We're using String Interpolation with our **while()** loop to sing dumb songs!
+- **trace('$i bottles of...on the wall!');** - We're using _String Interpolation_ with our **while()** loop to sing dumb songs!
 - **i--;** - This is the most important part! We need to subtract one from our **i** variable so in the next loop we'll have less bottles (and our loop won't continue forever)! 
  
 **++** and **--** are two handy shortcuts that add or subtract 1 from a value in place. We could have written it as **i -= 1**, which has the same effect. If our hypothetical bartender handed out two at a time, we could use **i -= 2**! Both of these shortcuts are just easier ways of saying **i = i - 1**.
@@ -598,6 +612,8 @@ There is another way to make loops in Haxe as well, the **for** loop!
 The **for** loop in Haxe is very elegant! Let's take a closer look!
 
 **for (i in 0...99)** - This line sets up the whole thing! We're setting up our iterating variable **i** and then we give it a range of numbers to loop through with **0...99**. We don't have to change **i** within our code block, either! There's also no chance of a **for()** loop to go on forever! For these reasons I usually stick with **for()** instead of **while()**!
+
+### [Back to top](#programming-in-haxe)
 
 ---
 
@@ -735,7 +751,7 @@ class Test
 }
 ```
 
-Look how clean that is! Then you can use the element in your **for()** block without having to access it using its index! If you want to know the index of the element when you're using a for() loop this way, you can check **fruits.indexOf(fruit)**! If an item is not indexed in an array, using **array.indexOf(item)** will return -1.
+Look how clean that is! Then you can use the element in your **for()** block without having to access it using its index! If you want to know the index of the element when you're using a **for()** loop this way, you can check **fruits.indexOf(fruit)**! If an item is not indexed in an array, using **array.indexOf(item)** will return -1.
 
 Arrays are an awesome way to store long lists of items! You can even store Arrays _inside_ arrays! 💥😲💥
 
@@ -772,6 +788,8 @@ class Test
 ```
 
 You can see it gets pretty wacky, so be careful when nesting arrays inside of arrays!
+
+### [Back to top](#programming-in-haxe)
 
 ---
 
@@ -898,7 +916,7 @@ Sprinkles sez:
 meow
 ```
 
-Wait, where did that "Sprinkles sez:" come from? If you look in **Animal**, you can see we added that to the **talk()** function! Then, in **Animal**, even though we override **talk()**, we're calling **super.talk()**. The super keyword reaches up to the super-class of the current class, which for **Cat** is **Animal** - so we can use **super.talk()** to execute the code in **Cat.talk()**!
+Wait, where did that "Sprinkles sez:" come from? If you look in **Animal**, you can see we added that to the **talk()** function! Then, in **Animal**, even though we override **talk()**, we're calling **super.talk()**. The **super** keyword reaches up to the super-class of the current class, which for **Cat** is **Animal** - so we can use **super.talk()** to execute the code in **Cat.talk()**!
 
 There's one function that behaves similarly but just different enough that we should touch on it further! Let's add something to our **Cat** class:
 
@@ -925,6 +943,8 @@ class Cat extends Animal
 
 Notice how we've written a new **new()** function for **Cat**, but we aren't overriding it. Like we learned earlier, any class that can be instantiated as an Object can have a **new()** function (or constructor), and if it doesn't have one your program will look to its super-class for a constructor. Also notice we've added a new parameter to **new()**! Since we're not overriding it, we can use different parameters! One thing we _need_ to do, that we don't have to do with other functions is call our super-class' **new()** function. You might think you would use **super.new()** to do so, but all you need to type is **super()**! Don't forget that you'll need values for any of the required parameters for your super-class' constructor!
 
+### [Back to top](#programming-in-haxe)
+
 ---
 
 ## Epilogue
@@ -939,3 +959,7 @@ I also _highly_ recommend these resources:
 - [The Haxe Cookbook](https://code.haxe.org/)
 - [The Haxe API](https://api.haxe.org/)
 - [Haxe Videos](https://haxe.org/videos/)
+
+Thank you to @orion_black for proof-reading this!
+
+### [Back to top](#programming-in-haxe)
