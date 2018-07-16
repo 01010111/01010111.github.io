@@ -547,7 +547,7 @@ To check to see if something **isn't** true, you can use an exclamation mark (**
 		var day:String = 'Tuesday';
 		if (day != 'Friday')
 		{
-			trace('I can't wait til Friday!');
+			trace("I can't wait til Friday!");
 		}
 	}
 ```
