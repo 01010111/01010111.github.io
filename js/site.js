@@ -61,7 +61,7 @@ Site.get_content = function (page)
 */
 Site.parsed_callback = function ()
 {
-	this.make_code_copyable();
+	//this.make_code_copyable();
 	this.give_external_links_icon();
 	this.create_twitter_links();
 	this.add_back_to_top_icon();
@@ -136,7 +136,6 @@ Site.add_back_to_top_icon = function ()
 	{
 		if (h3s[i].getElementsByTagName('a').length > 0)
 		{
-			console.log(h3s[i]);
 			h3s[i].classList.add('back_to_top');
 		}
 	}
