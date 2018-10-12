@@ -179,7 +179,7 @@ class Person
 }
 ```
 
-Notice the **new()** function. Any class that can be instantiated as an Object should have a **new()** function - this is the constructor of the class, and runs the code to setup an object!
+Notice the **new()** function. Any class that can be instantiated as an Object should have a **new()** function - this is the constructor of the class, and runs the code to set up an object!
 
 Now let's go back up to the **Test** class and clean things up a little bit:
 
