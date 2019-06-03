@@ -3,7 +3,7 @@
 # 01010111
 ### Will Blanton
 
-# [Tutorials](tutorials)
+# [Tutorials](tutorials.html)
 
 Hi my name is Will and I make games.  
 Check them out please - [My games on itch.io](http://01010111.itch.io)

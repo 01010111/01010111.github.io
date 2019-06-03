@@ -1,0 +1,224 @@
+@media screen and (max-width: 680px)
+{
+
+	#content
+	{
+		background: #FFF;
+		padding: 50px;
+	}
+	
+	h1 img
+	{
+		margin: -60px -50px 0px -50px;
+		width: 100vw;
+	}
+
+}
+
+@media screen and (min-width: 681px) 
+{
+
+	#content
+	{
+		background: #FFF;
+		width: 580px;
+		margin: 60px auto;
+		padding: 50px;
+		border-radius: 20px;
+		box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 img 
+	{
+		width: 680px;
+		margin: -60px -50px 0px -50px;
+		border-radius: 20px 20px 0 0;	 
+	}
+	
+	body { background: linear-gradient(to right, rgb(236, 241, 243), rgb(252, 253, 255)); }
+
+}
+
+/* Reset */
+
+* 
+{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 16px;
+}
+
+/* Elements */
+
+a
+{
+	color: #F04;
+	text-decoration: none;
+	font-weight: bold;
+	transition-duration: 0.2s;
+}
+
+a:hover
+{
+	color: #FA4;
+	transition-duration: 0.2s;
+}
+
+p { margin: 20px 0; }
+h1, h2, h3, h4 { margin: 10px 0; }
+h1 { font-size: 1.5em; }
+h2, h4 { font-size: 1.25em; }	
+h3 { font-size: 1.1em; }
+
+h4
+{
+	color: #28F;
+	background: #EEE;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+h3 a
+{
+	font-size: 0.75em;
+	text-align: left;
+	color: #28F;
+	margin-left: 20px;
+}
+
+h3 a:hover
+{
+	color: #28F;
+}
+
+h1 a
+{
+	color: #FFF;
+	background-color: #F04;
+	padding: 10px 48px;
+	display: block;
+	text-align: center;
+	border-radius: 10px;
+}
+
+h1 a:hover
+{
+	color: #FFF;
+	background-color: #FA4;
+	transition-duration: 0.2s;
+}
+
+pre
+{
+	position: relative;
+	color: #FFF;
+	background: #000;
+	padding: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: 0px 0px 20px 0px;
+}
+
+pre:hover
+{
+	color: #FFF;
+	background: #222;
+	display: block;
+	float: left;
+	width: auto;
+	min-width: 100%;
+}
+
+blockquote p
+{
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+hr
+{
+	margin: 50px 0;
+	border-style: dashed;
+	border-color: #EEE;
+}
+
+code	{ font-weight: bold; }
+ul		{ margin: 15px; }
+li		{ margin: 5px; }
+li p	{ font-size: 0.9em; }
+
+/* Classes */
+
+#header
+{
+	color: #FFF;
+	width: 100vw;
+	background-color: #F04;
+	padding: 10px 20px;
+	position: fixed;
+	top: 0%;
+	z-index: 100;
+}
+
+#header:hover
+{
+	background-color: #FA4;
+	transition-duration: 0.2s;
+}
+
+#header a
+{
+	color: #FFF;
+}
+
+.copy_tooltip
+{
+	position: absolute;
+	width: 44px;
+	top: 10px;
+	right: 10px;
+	background: #222;
+	color: #666;
+	padding: 10px;
+	text-align: center;
+	opacity: 0;
+	border-radius: 12px;
+	font-weight: bold;
+	user-select: none;
+}
+
+pre:hover .copy_tooltip
+{
+	background: #F04;
+	color: #FFF;
+	transition-duration: 0.2s;
+	display: block;
+	opacity: 0.25;
+}
+
+.copy_tooltip:hover
+{
+	background: #FA4 !important;
+	opacity: 1 !important;
+}
+
+.external_link
+{
+	background-image: url('../images/external_link.svg');
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+	background-size: 16px;
+}
+
+.back_to_top
+{
+	background-image: url('../images/back_to_top.svg');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 12px;
+}
+
+.youtube { background-image: url('../images/external_link_youtube.svg'); }
+:target { padding-top: 70px; }
