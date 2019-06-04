@@ -4,6 +4,8 @@ import js.Browser;
 class Util
 {
 
+	static var commands:Array<{cmd:Array<String> -> Void, args:Array<String>}> = [];
+
 	public static function get_page():PageObject
 	{
 		var slug = get_slug();
@@ -23,7 +25,51 @@ class Util
 
 	static function get_path(slug:String):Array<String>
 	{
-		return slug.length == 0 ? ['index'] : slug.split('/');
+		return slug.length == 0 ? ['index'] : parse_slug(slug);
+	}
+
+	static function parse_slug(slug:String):Array<String>
+	{
+		var path = slug.split('/');
+		while (path[path.length - 1].indexOf('=') >= 0) parse_command(path.pop());
+		return path;
+	}
+
+	static function parse_command(cmd:String)
+	{
+		var command:String = cmd.split('=')[0];
+		var options:Array<String> = cmd.split('=')[1].split(',');
+		switch (command)
+		{
+			default: return;
+			case 'tag':
+				commands.push({
+					cmd: show_only_tags,
+					args: options
+				});
+			case 'style':
+				commands.push({
+					cmd: special_style,
+					args: options
+				});
+		}
+	}
+
+	static function show_only_tags(tags:Array<String>)
+	{
+		var divs = Browser.document.getElementById('content').getElementsByTagName('div');
+		for (div in divs)
+		{
+			var div_tags = div.getElementsByClassName('tag');
+			var hide_div = true;
+			for (tag in div_tags) if (tags.indexOf(tag.innerText) >= 0) hide_div = false;
+			if (hide_div) div.style.display = 'none';
+		}
+	}
+
+	static function special_style(classes:Array<String>)
+	{
+		for (c in classes) Browser.document.getElementById('content').classList.add(c);
 	}
 
 	static function get_current_page(path:Array<String>):String
@@ -34,13 +80,23 @@ class Util
 	public static function get_text(src:String, callback:String -> Void)
 	{
 		var q = new haxe.Http(src);
-		q.onData = callback;
+		q.onData = (s) -> {
+			callback(s);
+			for (command in commands) command.cmd(command.args);
+		}
 		q.request();
 	}
 
 	public static function parse_markdown(md:String):Markdown
 	{
-		return new Markdown(md);
+		if (md.charAt(0) == '?')
+		{
+			var cmd = md.split('\n')[0];
+			md = md.substr(cmd.length);
+			cmd = cmd.substr(1);
+			parse_command(cmd);
+		}
+		return new Markdown(md, { highlight: (code) -> Highlight.highlightAuto(code).value });
 	}
 
 	public static function build_breadcrumbs(path:Array<String>):String
@@ -64,14 +120,20 @@ class Util
 	public static function treat_links(path:Array<String>)
 	{
 		var links = Browser.document.getElementById('content').getElementsByTagName('a');
-		trace(links);
 		for (a in links) 
 		{
 			var link:LinkElement = cast a;
-			if (!is_local(link.href)) continue;
-			if (link.href.indexOf('#') >= 0) continue;
-			var href = link.href.split('/').pop();
-			link.href = '${path_to_link(path)}/$href';
+			if (is_local(link.href))
+			{
+				if (link.href.indexOf('#') >= 0) continue;
+				var href = link.href.split('/').pop();
+				link.href = '${path_to_link(path)}/$href';
+			}
+			else
+			{
+				link.classList.add('external_link');
+				if (link.href.indexOf('youtube') >= 0) link.classList.add('youtube');
+			}
 		}
 	}
 
@@ -88,6 +150,12 @@ class Util
 	public static function clean_text(s:String):String
 	{
 		return s.split('_').join(' ').split('-').join(' ');
+	}
+
+	public static function treat_tags()
+	{
+		var tags = Browser.document.getElementsByClassName('tag');
+		for (tag in tags) tag.onclick = () -> Browser.window.location.href = Browser.window.location.href + '/tag=${tag.innerText}';
 	}
 
 }

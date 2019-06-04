@@ -11,6 +11,7 @@
 	{
 		margin: -60px -50px 0px -50px;
 		width: 100vw;
+		align-self: flex-start;
 	}
 
 }
@@ -93,14 +94,21 @@ h3 a:hover
 	color: #28F;
 }
 
+h1 
+{
+	display: flex;
+}
+
 h1 a
 {
 	color: #FFF;
 	background-color: #F04;
-	padding: 10px 48px;
+	padding: 10px 0;
 	display: block;
 	text-align: center;
 	border-radius: 10px;
+	flex-grow: 1;
+	margin: 0 4px;
 }
 
 h1 a:hover
@@ -135,6 +143,9 @@ blockquote p
 {
 	font-size: 1.2em;
 	font-style: italic;
+	color: #666;
+	margin-left: 32px;
+	margin-right: 32px;
 }
 
 hr
@@ -173,6 +184,11 @@ li p	{ font-size: 0.9em; }
 	color: #FFF;
 }
 
+#header a:hover
+{
+	color: #F04;
+}
+
 .copy_tooltip
 {
 	position: absolute;
@@ -202,6 +218,32 @@ pre:hover .copy_tooltip
 {
 	background: #FA4 !important;
 	opacity: 1 !important;
+}
+
+.blog > h1 a
+{
+	font-size: 20px;
+	text-align: left;
+	padding: 0;
+	background-color: #FFF;
+	color: #F04;
+	margin: 0;
+}
+
+.blog > h2
+{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.blog > h3 a
+{
+	font-size: 12px;
+	background-color: #F04;
+	color: #FFF;
+	margin: 0;
+	padding: 4px 8px;
+	border-radius: 4px;
 }
 
 .external_link
