@@ -5,6 +5,10 @@
 
 ---
 
+# [Inktober 2019](inktober_2019)
+## 11/1/2019
+### [devlog](tag=devlog) [gamedev](tag=gamedev) [inktober](tag=inktober)
+
 # [New Website!](new_website)
 ## 6/4/2019
 ### [devlog](tag=devlog) [webdev](tag=webdev)
