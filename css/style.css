@@ -155,6 +155,11 @@ hr
 	border-color: #EEE;
 }
 
+img
+{
+	max-width: 100%;
+}
+
 code	{ font-weight: bold; }
 ul		{ margin: 15px; }
 li		{ margin: 5px; }
@@ -234,6 +239,11 @@ pre:hover .copy_tooltip
 {
 	font-size: 12px;
 	font-weight: normal;
+}
+
+.blog h3
+{
+	margin-bottom: 32px;
 }
 
 .blog > h3 a
