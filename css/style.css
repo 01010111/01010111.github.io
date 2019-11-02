@@ -160,6 +160,8 @@ hr
 img
 {
 	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 code	{ font-weight: bold; }
