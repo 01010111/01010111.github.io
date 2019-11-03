@@ -56,13 +56,13 @@ It's a lot less complicated (no map needed, only updates one variable) and it ab
 
 ![endless rubber](../images/endless_rubber.jpeg)
 
-I had been working on an endless runner game at work in which you could tap to jump, and tap again to immediately dash back down (you can play an early build [here](http://01010111.com/eeeeendless-runner/)). At some point I mistyped "Endless Runner" as **"Endless Rubber"**.
+I had been working on an endless runner game at work in which you could tap to jump, and tap again to immediately dash back down (you can play an early build [here](http://01010111.com/eeeeendless-runner/~external~)). At some point I mistyped "Endless Runner" as **"Endless Rubber"**.
 
 At first I thought it was funny, but I had been experimenting with swiping and other gestures to jump and fall in meaningful ways, and I thought it might be interesting to try to make the experience of a wheel rather than a running guy.
 
 ## Creation
 
-I spent a lunch break making a quick prototype - it does feel pretty interesting! You can play a very rough demo [here](http://01010111.com/endless-rubber/export/html5/bin/).
+I spent a lunch break making a quick prototype - it does feel pretty interesting! You can play a very rough demo [here](http://01010111.com/endless-rubber/export/html5/bin/~external~).
 
 # inktober 3 - Tetris Dungeon Crawler
 
@@ -82,7 +82,7 @@ I'll probably never make this, but it was a fun exercise in creating mechanics f
 
 ## Ideation
 
-A long time ago I tried making a lemmings-like where you would draw cards and manipulate a level using powers given by the cards. It was fun to make but I went too hard in the paint and developed an ulcer. That was really bleak so the [game never got finished](https://01010111.tumblr.com/post/143859375059/this-represents-serious-progress-i-swear). I've also always loved slide puzzles. I was using a tool I made a while ago to generate game mechanic ideas called [Cardlink](http://01010111.com/Cardlink/) and a couple of cards spurred my interest. I don't remember exactly what they were, but it was most definitely something like **Slide** and **Walk**. I probably would have thought of some kind of Megaman slide mechanic had I not made the lemmings card game, but instead my brain went to [platformer where you slide pieces of the levels around like a slide puzzle to complete it].
+A long time ago I tried making a lemmings-like where you would draw cards and manipulate a level using powers given by the cards. It was fun to make but I went too hard in the paint and developed an ulcer. That was really bleak so the [game never got finished](https://01010111.tumblr.com/post/143859375059/this-represents-serious-progress-i-swear). I've also always loved slide puzzles. I was using a tool I made a while ago to generate game mechanic ideas called [Cardlink](http://01010111.com/Cardlink/~external~) and a couple of cards spurred my interest. I don't remember exactly what they were, but it was most definitely something like **Slide** and **Walk**. I probably would have thought of some kind of Megaman slide mechanic had I not made the lemmings card game, but instead my brain went to [platformer where you slide pieces of the levels around like a slide puzzle to complete it].
 
 It'd be really fun to make this, but instead I'll settle for playing [this](https://ldjam.com/events/ludum-dare/45/world-collector) awesome Ludum Dare winning Haxeflixel game made by [Joe Williamson](https://twitter.com/JoeCreates) with a slightly similar premise!
 
