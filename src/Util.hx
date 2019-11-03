@@ -131,6 +131,8 @@ class Util
 			}
 			else
 			{
+				var i = link.href.indexOf('~external~');
+				if (i >= 0) link.href = link.href.substr(0, i) + link.href.substr(i + '~external~'.length);
 				link.classList.add('external_link');
 				if (link.href.indexOf('youtube') >= 0) link.classList.add('youtube');
 			}
@@ -139,6 +141,7 @@ class Util
 
 	public static function is_local(link:String):Bool
 	{
+		if (link.indexOf('~external~') >= 0) return false;
 		return (Browser.document.location.href.split('/')[0] == link.split('/')[0]);
 	}
 
