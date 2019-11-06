@@ -159,6 +159,8 @@ Then I made a small framework for creating GOAP jobs and figuring out the best n
 
 Redshift Blueshift was a paddle game I made with [Alan McCosh](https://twitter.com/whilesoftware) in 2015. It's pretty fun to play but I'm constantly thinking of ways to improve it! I remember back when we were developing it Alan pitched the idea of using tennis-like scoring instead of what we had (first to 3, 5, or 10). After looking up how tennis was scored I was so confused that I shot the idea down, but I after some time I think Alan was totally right! Tennis has an interesting tug of war element to the scoring that would totally benefit the game. I also feel like there's a lot of possibility space in using special abilities - right now the only special abilities are speeding up and slowing down the ships.
 
+![RSBSDX Mockup](../images/rsbsdx_mockup.png)
+
 I'd love to team up with Alan again and make a sequel to RSBS - I've learned a ton since we made it, and working with Alan was a blast!
 
 # Wrap up
