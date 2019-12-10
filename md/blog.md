@@ -5,6 +5,10 @@
 
 ---
 
+# [The Story of OGMO Editor and me](ogmo_and_me)
+## 12/10/2019
+### [devlog](tag=devlog) [gamedev](tag=gamedev) [ogmo](tag=ogmo)
+
 # [Inktober 2019](inktober_2019)
 ## 11/1/2019
 ### [devlog](tag=devlog) [gamedev](tag=gamedev) [inktober](tag=inktober)
