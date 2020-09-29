@@ -251,7 +251,7 @@ Util.treat_links = function(path) {
 };
 Util.is_local = function(link) {
 	if(link.indexOf("01010111.com") >= 0) {
-		return link.split("/").length <= 0;
+		return link.split("/").length <= 4;
 	} else {
 		return false;
 	}

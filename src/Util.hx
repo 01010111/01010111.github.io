@@ -118,7 +118,7 @@ class Util
 	}
 
 	public static function is_local(link:String):Bool {
-		return link.indexOf('01010111.com') >= 0 && link.split('/').length <= 0;
+		return link.indexOf('01010111.com') >= 0 && link.split('/').length <= 4;
 	}
 
 	public static function first_char_uppercase(s:String):String {
