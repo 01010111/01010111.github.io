@@ -241,11 +241,20 @@ Util.treat_links = function(path) {
 			}
 			var href = link.href.split("/").pop();
 			link.href = "" + Util.path_to_link(path) + "/" + href;
+		} else {
+			link.classList.add("external_link");
+			if(link.href.indexOf("youtube") >= 0) {
+				link.classList.add("youtube");
+			}
 		}
 	}
 };
 Util.is_local = function(link) {
-	return link.indexOf("01010111.com") >= 0;
+	if(link.indexOf("01010111.com") >= 0) {
+		return link.split("/").length <= 0;
+	} else {
+		return false;
+	}
 };
 Util.first_char_uppercase = function(s) {
 	return HxOverrides.substr(s,0,1).toUpperCase() + HxOverrides.substr(s,1,s.length - 1);
