@@ -5,13 +5,11 @@
 
 # [Tutorials](tutorials) [Blog](blog)
 
-👋 Hi, my name is Will and I make video games. You can play some of those games on my itch.io page [here](https://01010111.itch.io)
+👋 Hi, my name is Will and I make video games. You can play some of those games on my itch.io page [here](~external~https://01010111.itch.io)
 
-🕹 I work at Mobelux in Richmond VA where I make video games for awesome people. You can check out Mobelux [here](https://mobelux.com)
+🕹 I work at Mobelux in Richmond VA where I make video games for awesome people. You can check out Mobelux [here](~external~https://mobelux.com)
 
-🐶 My wonderful wife makes delicious treats for dogs with her business Allie Bones. If your pup needs a treat, check her out [here](https://alliebones.com)
-
-👶👶 I'm a dad to two baby boys!
+👶👶 I'm a dad to two baby boys and a husband to one awesome woman!
 
 ---
 
