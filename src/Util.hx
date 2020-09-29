@@ -129,20 +129,12 @@ class Util
 				var href = link.href.split('/').pop();
 				link.href = '${path_to_link(path)}/$href';
 			}
-			else
-			{
-				var i = link.href.indexOf('~external~');
-				if (i >= 0) link.href = link.href.substr(0, i) + link.href.substr(i + '~external~'.length);
-				link.classList.add('external_link');
-				if (link.href.indexOf('youtube') >= 0) link.classList.add('youtube');
-			}
 		}
 	}
 
 	public static function is_local(link:String):Bool
 	{
-		if (link.indexOf('~external~') >= 0) return false;
-		return (Browser.document.location.href.split('/')[0] == link.split('/')[0]);
+		return link.indexOf('01010111.com') >= 0;
 	}
 
 	public static function first_char_uppercase(s:String):String
