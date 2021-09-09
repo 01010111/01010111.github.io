@@ -1,4 +1,4 @@
-# ![it's me](../images/it_me.png)
+# ![it's me](../images/me.png)
 
 # 01010111
 ## Will Blanton
