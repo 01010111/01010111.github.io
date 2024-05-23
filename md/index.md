@@ -9,7 +9,7 @@
 
 🕹 I work at Mobelux in Richmond VA where I make video games for awesome people. You can check out Mobelux [here](https://mobelux.com)
 
-👶👶 I'm a dad to two baby boys and a husband to one awesome woman!
+🤓🤪 I'm a dad to two awesome guys!
 
 ---
 
