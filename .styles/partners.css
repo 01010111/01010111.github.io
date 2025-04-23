@@ -1,0 +1,21 @@
+.partner-logo-container {
+	display: flex;
+	gap: 64px;
+	margin: 80px 0;
+	padding-left: 64px;
+	width: fit-content;
+	animation: partner-marquee-scroll 10s linear infinite;
+
+	& img {
+		height: 80px;
+	}
+}
+
+@keyframes partner-marquee-scroll {
+	0% {
+		transform: rotate(5deg) translateY(360px) translateX(-50%);
+	}
+	100% {
+		transform: rotate(5deg) translateY(360px) translateX(-75%);
+	}
+}

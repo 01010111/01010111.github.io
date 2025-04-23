@@ -1,0 +1,39 @@
+section.hero {
+
+	background-color: var(--col-primary-dark);
+	margin: 32px 32px 32px 32px;
+	width: min(2400px, calc(100vw - 64px));
+	height: calc(100svh - 160px);
+	border-radius: 16px;
+	overflow: hidden;
+	display: flex;
+	padding: 0;
+
+	& .hero-photo {
+		width: 60%;
+		height: 100%;
+		background-color: grey;
+	}
+
+	& .hero-container {
+		min-width: max(40%, 460px);
+		display: flex;
+		flex-direction: column;
+        justify-content: center;
+        align-items: center;
+		gap: 32px;
+
+		& p {
+			color: var(--col-primary-light);
+			font-size: 24px !important;
+		}
+
+	}
+}
+
+.more {
+	height: 16px;
+	margin-top: -80px;
+	font-size: 48px;
+	color: var(--col-primary-dark);
+}

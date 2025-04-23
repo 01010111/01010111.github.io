@@ -1,0 +1,18 @@
+body {
+	font-family: "Lexend", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 20px;
+}
+
+h3 {
+	position: relative;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	overflow: visible;
+	margin-bottom: 48px;
+	min-width: 170px;
+}

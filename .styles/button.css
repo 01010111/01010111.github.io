@@ -1,0 +1,31 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 224px;
+	height: 48px;
+	border-radius: 24px;
+	background-color: var(--col-secondary-dark);
+	color: var(--col-white);
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 600;
+	transition-duration: 100ms;
+
+	&.secondary {
+		background-color: transparent;
+		color: var(--col-secondary-dark);
+		border: 2px solid var(--col-secondary-dark);
+	}
+
+	&:hover {
+		transform: rotate(-5deg);
+		z-index: 1;
+		box-shadow: var(--shadow-dark);
+	}
+}
+
+.horizontal-btn-container {
+	display: flex;
+	gap: 16px;
+}

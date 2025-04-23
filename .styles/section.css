@@ -1,0 +1,46 @@
+section {
+	width: min(1280px, calc(100vw - 64px));
+	padding: 80px 160px;
+	color: var(--col-primary-dark);
+	border-radius: 16px;
+
+	&.light {
+		background-color: var(--col-white);
+		color: var(--col-black);
+
+		& h3 {
+			&::after {
+				background-image: url(images/squiggle-dark.svg);
+			}
+		}
+	}
+
+	&.dark {
+		background-color: var(--col-primary-dark);
+		color: var(--col-primary-light);
+
+		& h3 {
+			&::after {
+				background-image: url(images/squiggle-light.svg);
+			}
+		}
+	}
+
+	& h3 {
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -24px;
+			left: 0;
+			width: 169px;
+			height: 8px;
+			background-image: url(images/squiggle-primary.svg);
+		}
+	}
+}
+
+.horizontal-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
