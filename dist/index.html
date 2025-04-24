@@ -3,95 +3,152 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hello World</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Will Blanton - Game Developer!</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lilita+One&display=swap" rel="stylesheet">
+	
 </head>
 <body>
 		<section class="hero">
 			<div class="hero-photo"></div>
 			<div class="hero-container">
 				<p>My name is Will Blanton<br/>and I like to make <span class="emphasis">video games</span></p>
-				<div class="horizontal-btn-container">
-					<div class="btn">Contact</div>
-					<div class="btn secondary">Case Studies</div>
+				<div class="hero-btn-container">
+					<div class="btn" onclick="document.querySelector('#contact').scrollIntoView({ behavior:'smooth', block: 'center' })">Contact</div>
+					<div class="btn secondary" onclick="document.querySelector('#case-studies').scrollIntoView({ behavior:'smooth', block: 'start' })">Case Studies</div>
 				</div>
 			</div>
 		</section>
-		<div class="more">...</div>
-		<section class="partners">
+		<div class="more" onclick="document.querySelector('#partners').scrollIntoView({ behavior:'smooth', block: 'center' })">...</div>
+		<section class="partners" id="partners">
 			<h3>Partners</h3>
 			<p>I've created <span class="emphasis">dozens</span> of custom games in collaboration with clients of all sizes to accomplish many different goals - brand knowledge training, product education, and fun engagement!</p>
-			<div class="partner-logo-container">
-				<img src="images/partners/logo1.svg" alt="company1"/>
-				<img src="images/partners/logo2.svg" alt="company2"/>
-				<img src="images/partners/logo3.svg" alt="company3"/>
-				<img src="images/partners/logo4.svg" alt="company4"/>
-				<img src="images/partners/logo5.svg" alt="company5"/>
-				<img src="images/partners/logo6.svg" alt="company6"/>
-				<img src="images/partners/logo7.svg" alt="company7"/>
-				<img src="images/partners/logo8.svg" alt="company8"/>
-				<img src="images/partners/logo1.svg" alt="company1"/>
-				<img src="images/partners/logo2.svg" alt="company2"/>
-				<img src="images/partners/logo3.svg" alt="company3"/>
-				<img src="images/partners/logo4.svg" alt="company4"/>
-				<img src="images/partners/logo5.svg" alt="company5"/>
-				<img src="images/partners/logo6.svg" alt="company6"/>
-				<img src="images/partners/logo7.svg" alt="company7"/>
-				<img src="images/partners/logo8.svg" alt="company8"/>
-				<img src="images/partners/logo1.svg" alt="company1"/>
-				<img src="images/partners/logo2.svg" alt="company2"/>
-				<img src="images/partners/logo3.svg" alt="company3"/>
-				<img src="images/partners/logo4.svg" alt="company4"/>
-				<img src="images/partners/logo5.svg" alt="company5"/>
-				<img src="images/partners/logo6.svg" alt="company6"/>
-				<img src="images/partners/logo7.svg" alt="company7"/>
-				<img src="images/partners/logo8.svg" alt="company8"/>
-				<img src="images/partners/logo1.svg" alt="company1"/>
-				<img src="images/partners/logo2.svg" alt="company2"/>
-				<img src="images/partners/logo3.svg" alt="company3"/>
-				<img src="images/partners/logo4.svg" alt="company4"/>
-				<img src="images/partners/logo5.svg" alt="company5"/>
-				<img src="images/partners/logo6.svg" alt="company6"/>
-				<img src="images/partners/logo7.svg" alt="company7"/>
-				<img src="images/partners/logo8.svg" alt="company8"/>
+			<div class="partners-marquee">
 			</div>
 		</section>
-		<section class="dark">
+		<section class="dark" id="play">
 			<div class="horizontal-flex">
 				<h3>Play</h3>
 				<p>Sample a selection of web<br/>games created for my clients -></p>
-				<div class="btn">Play</div>
+				<div class="btn" onclick="window.open('arcade.html')">Play</div>
 			</div>
 		</section>
 		<section class="light">
 			<h3>Process</h3>
 			<p>I’ve had years of experience working with clients to accommodate a <span class="emphasis">smooth</span> collaboration process that quickly gets your vision into the hands and hearts of your users.</p>
 			<div class="process-timeline">
-				<div class="process-step">
-					<img src="images/will-timeline-1.svg" alt=""/>
+				<div class="process-step" id="process-step-1">
+					<img src="images/will-discover.svg" alt="illustration of Will looking through a magnifying glass"/>
 					<div class="timeline-title">discover</div>
 					<p>We work together to understand your organization’s goals, and craft a unique vision for a game that will deliver a memorable experience for users.</p>
 				</div>
-				<img class="arrow" src="images/timeline-arrow.svg" alt="">
-				<div class="process-step">
-					<img src="images/will-timeline-1.svg" alt=""/>
+				<img class="arrow" src="images/timeline-arrow.svg" alt="illustration of Will holding a wrench">
+				<div class="process-step" id="process-step-2">
+					<img src="images/will-build.svg" alt="" style="animation-delay: 3.333s;"/>
 					<div class="timeline-title" style="animation-delay: 3.333s;">iterate</div>
 					<p>I utilize my rapid development skills to create a prototype, and iterate - pivoting to allow for the best and most engaging ideas to flourish into a completed project.</p>
 				</div>
-				<img class="arrow" src="images/timeline-arrow.svg" alt="">
-				<div class="process-step">
-					<img src="images/will-timeline-1.svg" alt=""/>
+				<img class="arrow" src="images/timeline-arrow.svg" alt="illustration of Will in a space suit">
+				<div class="process-step" id="process-step-3">
+					<img src="images/will-space.svg" alt="" style="animation-delay: 6.666s;"/>
 					<div class="timeline-title" style="animation-delay: 6.666s;">launch</div>
 					<p>We work together to launch our new game - making it available to your users - and collect valuable analytics to track custom goals.</p>
 				</div>
 			</div>
+			<script defer>
+				const process_steps = [
+					document.querySelector('#process-step-1'),
+					document.querySelector('#process-step-2'),
+					document.querySelector('#process-step-3'),
+				];
+				var active_step = undefined;
+				function process_on_scroll(ev) {
+					const screen_mid = window.innerHeight * 0.5;
+					let nearest = undefined;
+					let last_dist = 9e9;
+					for (let step of process_steps) {
+						let step_top = step.getBoundingClientRect().top;
+						let dist = Math.abs(screen_mid - step_top);
+						if (dist < last_dist) {
+							nearest = step;
+							last_dist = dist;
+						}
+					}
+					if (nearest == active_step) return;
+					if (active_step) active_step.classList.remove('active');
+					active_step = nearest;
+					active_step.classList.add('active');
+				}
+				window.addEventListener('scroll', process_on_scroll);
+				window.addEventListener('touchmove', process_on_scroll);
+			</script>
 		</section>
-		<section class="dark">
+		<section class="dark" id="case-studies">
 			<h3>Case Studies</h3>
+			<div class="case-studies-container">
+				<div class="case-study" style="--bg-image:url(https://placecats.com/320/420)" onclick="window.open('case-study.html')">
+					<div class="case-study-info">Game Title<br/><span class="small">for Client Name</span></div>
+				</div>
+				<div class="case-study" style="--bg-image:url(https://placecats.com/321/420)" onclick="window.open('case-study.html')">
+					<div class="case-study-info">Game Title<br/><span class="small">for Client Name</span></div>
+				</div>
+				<div class="case-study" style="--bg-image:url(https://placecats.com/322/420)" onclick="window.open('case-study.html')">
+					<div class="case-study-info">Game Title<br/><span class="small">for Client Name</span></div>
+				</div>
+			</div>
+			<script src="js/pixi.min.js" defer></script>
+			<script src="js/pig.js" defer></script>
+			<div class="game pig" id="game-pig"></div>
+			<script defer>
+				const game_pig = document.querySelector('#game-pig');
+				window.setInterval(() => {
+					const pig_canvas = game_pig.firstChild;
+					let scale = Math.min(1, (window.innerWidth - 64) / 480)
+					pig_canvas.style.scale = `${scale}`;
+					game_pig.style.width = `${scale * 480}px`;
+					game_pig.style.height = `${scale * 192}px`;
+				}, 1000)
+			</script>
 		</section>
+		<section class="light" id="contact">
+			<h3>Contact</h3>
+			<p>If you’d like to explore what a game could do for your organization and your users, <span class="emphasis">let’s chat!</span></p>
+			<form action="https://formsubmit.co/will.blanton.804@gmail.com" method="POST">
+				<div class="input-container">
+					<div class="input-pair">
+						<label for="name">Name</label>
+						<input type="text" name="name">
+					</div>
+					<div class="input-pair">
+						<label for="email">Email</label>
+						<input type="email" name="email">
+					</div>
+				</div>
+				<button class="btn right">Send!</button>
+			</form>
+		</section>
+		<footer>
+			<div class="footer-container">
+				<div class="footer-info">
+					<h1>Extra Stuff</h1>
+					<p>
+						Email: <a href="mailto:will.blanton.804@gmail.com">mailto:will.blanton.804@gmail.com</a>
+						<br/>
+						Github: <a href="http://github.com/user/01010111">github.com/user/010101111</a>
+						<br/>
+						LinkedIn: <a href="http://linkedin.com/01010111">linkedin.com/01010111</a>
+						<br/>
+						<br/>
+						Everything here © 2025 Will Blanton
+					</p>
+				</div>
+				<div class="footer-logo">
+					<img src="images/wb01-logo.svg" alt="">
+				</div>
+			</div>
+		</footer>
 </body>
 </html>

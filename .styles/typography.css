@@ -6,6 +6,12 @@ body {
 	font-size: 20px;
 }
 
+h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 32px;
+}
+
 h3 {
 	position: relative;
 	font-size: 14px;
@@ -15,4 +21,20 @@ h3 {
 	overflow: visible;
 	margin-bottom: 48px;
 	min-width: 170px;
+}
+
+a {
+	color: var(--col-secondary-dark);
+	text-decoration: none;
+
+	&:hover {
+		color: var(--col-white);
+		background-color: var(--col-secondary-dark);
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	body {
+		font-size: 16px;
+	}
 }

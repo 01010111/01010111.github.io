@@ -2,22 +2,49 @@
 	<h3>Process</h3>
 	<p>I’ve had years of experience working with clients to accommodate a <span class="emphasis">smooth</span> collaboration process that quickly gets your vision into the hands and hearts of your users.</p>
 	<div class="process-timeline">
-		<div class="process-step">
-			<img src="images/will-timeline-1.svg" alt=""/>
+		<div class="process-step" id="process-step-1">
+			<img src="images/will-discover.svg" alt="illustration of Will looking through a magnifying glass"/>
 			<div class="timeline-title">discover</div>
 			<p>We work together to understand your organization’s goals, and craft a unique vision for a game that will deliver a memorable experience for users.</p>
 		</div>
-		<img class="arrow" src="images/timeline-arrow.svg" alt="">
-		<div class="process-step">
-			<img src="images/will-timeline-1.svg" alt=""/>
+		<img class="arrow" src="images/timeline-arrow.svg" alt="illustration of Will holding a wrench">
+		<div class="process-step" id="process-step-2">
+			<img src="images/will-build.svg" alt="" style="animation-delay: 3.333s;"/>
 			<div class="timeline-title" style="animation-delay: 3.333s;">iterate</div>
 			<p>I utilize my rapid development skills to create a prototype, and iterate - pivoting to allow for the best and most engaging ideas to flourish into a completed project.</p>
 		</div>
-		<img class="arrow" src="images/timeline-arrow.svg" alt="">
-		<div class="process-step">
-			<img src="images/will-timeline-1.svg" alt=""/>
+		<img class="arrow" src="images/timeline-arrow.svg" alt="illustration of Will in a space suit">
+		<div class="process-step" id="process-step-3">
+			<img src="images/will-space.svg" alt="" style="animation-delay: 6.666s;"/>
 			<div class="timeline-title" style="animation-delay: 6.666s;">launch</div>
 			<p>We work together to launch our new game - making it available to your users - and collect valuable analytics to track custom goals.</p>
 		</div>
 	</div>
+	<script defer>
+		const process_steps = [
+			document.querySelector('#process-step-1'),
+			document.querySelector('#process-step-2'),
+			document.querySelector('#process-step-3'),
+		];
+		var active_step = undefined;
+		function process_on_scroll(ev) {
+			const screen_mid = window.innerHeight * 0.5;
+			let nearest = undefined;
+			let last_dist = 9e9;
+			for (let step of process_steps) {
+				let step_top = step.getBoundingClientRect().top;
+				let dist = Math.abs(screen_mid - step_top);
+				if (dist < last_dist) {
+					nearest = step;
+					last_dist = dist;
+				}
+			}
+			if (nearest == active_step) return;
+			if (active_step) active_step.classList.remove('active');
+			active_step = nearest;
+			active_step.classList.add('active');
+		}
+		window.addEventListener('scroll', process_on_scroll);
+		window.addEventListener('touchmove', process_on_scroll);
+	</script>
 </section>

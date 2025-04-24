@@ -1,21 +1,26 @@
-.partner-logo-container {
-	display: flex;
-	gap: 64px;
-	margin: 80px 0;
-	padding-left: 64px;
-	width: fit-content;
-	animation: partner-marquee-scroll 10s linear infinite;
-
-	& img {
-		height: 80px;
-	}
+.partners {
+	position: relative;
+	margin-bottom: 192px;
 }
 
-@keyframes partner-marquee-scroll {
+.partners-marquee {
+	position: absolute;
+	left: -100%;
+	background-image: url(images/partner-logos.svg);
+	width: 400%;
+	height: 128px;
+	animation: partners-marquee-scroll 10s linear infinite;
+	rotate: 3deg;
+	margin-top: 32px;
+	scale: 1.25;
+	filter: blur(0.25px);
+}
+
+@keyframes partners-marquee-scroll {
 	0% {
-		transform: rotate(5deg) translateY(360px) translateX(-50%);
+		background-position-x: 0;
 	}
 	100% {
-		transform: rotate(5deg) translateY(360px) translateX(-75%);
+		background-position-x: -1512px;
 	}
 }

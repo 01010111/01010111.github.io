@@ -18,14 +18,18 @@
 		border: 2px solid var(--col-secondary-dark);
 	}
 
+	&.right {
+		margin-right: 0;
+		margin-left: auto;
+	}
+
 	&:hover {
-		transform: rotate(-5deg);
+		transform: rotate(-3deg);
 		z-index: 1;
 		box-shadow: var(--shadow-dark);
 	}
 }
 
-.horizontal-btn-container {
-	display: flex;
-	gap: 16px;
+button {
+	border: none;
 }

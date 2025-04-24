@@ -2,10 +2,10 @@
 	<div class="hero-photo"></div>
 	<div class="hero-container">
 		<p>My name is Will Blanton<br/>and I like to make <span class="emphasis">video games</span></p>
-		<div class="horizontal-btn-container">
-			<div class="btn">Contact</div>
-			<div class="btn secondary">Case Studies</div>
+		<div class="hero-btn-container">
+			<div class="btn" onclick="document.querySelector('#contact').scrollIntoView({ behavior:'smooth', block: 'center' })">Contact</div>
+			<div class="btn secondary" onclick="document.querySelector('#case-studies').scrollIntoView({ behavior:'smooth', block: 'start' })">Case Studies</div>
 		</div>
 	</div>
 </section>
-<div class="more">...</div>
+<div class="more" onclick="document.querySelector('#partners').scrollIntoView({ behavior:'smooth', block: 'center' })">...</div>

@@ -1,0 +1,81 @@
+.arcade {
+	position: absolute;
+	width: 100%;
+	border-radius: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 100svh;
+	background-color: var(--col-primary-dark);
+	padding: 80px 0;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+	& .arcade-header {
+
+		max-width: min(1280px, calc(100vw - 32px));
+		display: flex;
+
+		& .arcade-info {
+			padding: 0;
+		}
+
+		& .arcade-header-logo {
+			margin-right: 16px;
+		}
+
+	}
+
+	& .arcade-games {
+		display: flex;
+        max-width: 1280px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+		padding: 32px;
+
+		& .arcade-game {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			cursor: pointer;
+			transition-duration: 200ms;
+
+			&:hover {
+				scale: 1.05;
+			}
+
+			& .arcade-game-image {
+				width: 340px;
+				height: 240px;
+				background-color: grey;
+			}
+
+			& .arcade-game-info {
+				color: var(--col-primary-light);
+				font-size: 16px;
+
+				& .small {
+					color: var(--col-secondary-dark);
+					font-size: 14px;
+				}
+			}
+
+		}
+	}
+
+	& .arcade-footer {
+		max-width: min(1280px, calc(100vw - 32px));
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	& .arcade-footer {
+		& .btn.right {
+			margin-right: auto;
+		}
+	}
+}

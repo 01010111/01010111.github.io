@@ -1,0 +1,32 @@
+footer {
+	width: 100%;
+	background-color: var(--col-secondary-light);
+	margin-bottom: -64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& .footer-container {
+		width: 100%;
+		max-width: 1440px;
+		padding: 128px;
+		display: flex;
+		justify-content: space-between;
+		color: var(--col-primary-dark);
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	footer {
+		& .footer-container {
+			padding: 32px;
+			flex-direction: column;
+			gap: 64px;
+
+			& .footer-logo {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+	}
+}

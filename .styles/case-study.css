@@ -1,0 +1,99 @@
+.case-study-header {
+	max-width: min(1280px, calc(100vw - 32px));
+	display: flex;
+	position: relative;
+	padding: 80px 128px;
+
+	& .case-study-info {
+		padding: 0;
+	}
+
+	& .case-study-header-logo {
+		margin-right: 16px;
+		cursor: pointer;
+	}
+
+	&::after {
+		content: '';
+		position:absolute;
+		width: 1px;
+		height: 1px;
+		bottom: -64px;
+		left: 50%;
+		transform-origin: 50% 100%;
+		scale: 6400 640;
+		rotate: -5deg;
+		background-color: var(--col-primary-dark);
+		z-index: -1;
+	}
+}
+
+section.case-study {
+	max-width: 960px;
+	padding: 64px 64px;
+	border-radius: 0;
+	background-color: var(--col-white);
+	margin-top: -96px;
+
+	& h1 {
+		margin-bottom: 0;
+	}
+
+	& h2 {
+		color: var(--col-secondary-dark);
+		margin-bottom: 32px;
+		font-size: 24px;
+	}
+
+	& p {
+		font-size: 16px;
+		font-weight: 400;
+		margin-bottom: 16px;
+	}
+
+	& img {
+
+		&.float-left {
+			float: left;
+			margin: 16px 16px 32px -128px;
+			max-width: 60%;
+		}
+
+		&.float-right {
+			float: right;
+			margin: 16px -128px 32px 16px;
+			max-width: 60%;
+		}
+
+		&.main-image {
+			margin: -64px 64px 64px -64px;
+			max-width: calc(100% + 128px);
+		}
+
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	section.case-study {
+		width: 100%;
+
+		& img {
+
+			&.float-left {
+				float: none;
+				display: block;
+				margin: 16px auto;
+				max-width: 100%;
+			}
+
+			&.float-right {
+				float: none;
+				display: block;
+				margin: 16px auto;
+				max-width: 100%;
+			}
+
+		}
+
+	}
+}
