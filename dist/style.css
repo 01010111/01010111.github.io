@@ -408,7 +408,6 @@ footer {
 dialog.game-modal {
 	width: calc(100vw - 64px);
 	height: calc(100svh - 64px);
-	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform-origin: 0 0;
@@ -667,9 +666,19 @@ section.hero {
 
 /* play.css */
 
+.play-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 @media screen and (max-width: 1280px) {
-	#play {
-		display: none;
+	.play-flex {
+		display: block;
+
+		& .btn {
+			margin: 32px auto;
+		}
 	}
 }
 
@@ -853,12 +862,6 @@ section {
 			background-image: url(images/squiggle-primary.svg);
 		}
 	}
-}
-
-.horizontal-flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 @media screen and (max-width: 1280px) {
