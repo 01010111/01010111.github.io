@@ -104,13 +104,17 @@
 			<div class="game pig" id="game-pig"></div>
 			<script defer>
 				const game_pig = document.querySelector('#game-pig');
-				window.setInterval(() => {
+				function resize_game_pig() {
 					const pig_canvas = game_pig.firstChild;
-					let scale = Math.min(1, (window.innerWidth - 64) / 480)
+					const available_width = game_pig.parentNode.getBoundingClientRect().width - 32;
+					console.log(available_width);
+					let scale = Math.min(1, available_width / 480);
 					pig_canvas.style.scale = `${scale}`;
-					game_pig.style.width = `${scale * 480}px`;
-					game_pig.style.height = `${scale * 192}px`;
-				}, 1000)
+				}
+				window.addEventListener('load', () => {
+					resize_game_pig();
+					window.addEventListener('resize', () => resize_game_pig());
+				});
 			</script>
 		</section>
 		<section class="light" id="contact">

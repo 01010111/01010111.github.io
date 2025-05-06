@@ -37,6 +37,8 @@ var Main = function() {
 	window.document.getElementById("game-pig").appendChild(this.view);
 	this.loader.add(["images/games/dice_0.png","images/games/dice_1.png","images/games/dice_2.png","images/games/dice_3.png","images/games/dice_4.png","images/games/dice_5.png","images/games/dice_6.png","images/games/restart.png"]);
 	this.loader.load($bind(this,this.init));
+	this.renderer.view.style.touchAction = 'auto';
+	this.renderer.plugins.interaction.autoPreventDefault = false;
 	this.ticker.add(function(n) {
 		zero_utilities_Timer.update(0.016666666666666666);
 		zero_utilities_Tween.update(0.016666666666666666);
