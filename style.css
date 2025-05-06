@@ -11,7 +11,7 @@
 	background-image: url(images/partner-logos.svg);
 	width: 400%;
 	height: 128px;
-	animation: partners-marquee-scroll 10s linear infinite;
+	animation: partners-marquee-scroll 20s linear infinite;
 	rotate: 3deg;
 	margin-top: 32px;
 	scale: 1.25;
@@ -20,10 +20,10 @@
 
 @keyframes partners-marquee-scroll {
 	0% {
-		background-position-x: 0;
+		transform: translateX(0);
 	}
 	100% {
-		background-position-x: -1512px;
+		transform: translateX(-1512px);
 	}
 }
 
