@@ -5,22 +5,20 @@
 
 .partners-marquee {
 	position: absolute;
-	left: -150%;
 	background-image: url(images/partner-logos.svg);
-	width: 400%;
+	width: 6048px;
 	height: 128px;
 	animation: partners-marquee-scroll 20s linear infinite;
 	rotate: 3deg;
-	margin-top: 32px;
+	margin-top: 160px;
 	scale: 1.25;
-	filter: blur(0.25px);
 }
 
 @keyframes partners-marquee-scroll {
 	0% {
-		transform: translateX(0);
+		transform: translateX(-1512px);
 	}
 	100% {
-		transform: translateX(-1512px);
+		transform: translateX(-3024px);
 	}
 }
