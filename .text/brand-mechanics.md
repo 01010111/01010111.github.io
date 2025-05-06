@@ -15,6 +15,8 @@ Considering Unboxed Technologies' "Skill Agility," a flurry of game concepts aro
 
 Driven by this fast-paced synergy between brand and mechanic, the game's development was an agile sprint, completed within a single month (June 2nd to June 23rd). The result is a game I'm particularly proud of, rich with features like voice-over guidance, seamless social sharing integration, and ten distinct skills to dynamically swap and master – all directly reflecting the core tenet of Skill Agility.
 
+You can test your own Skill Agility with [Skill Swap &rarr;](arcade.html)
+
 ### What Gameplay Lives Within Your Brand's Core?
 
 If you're seeking to explore how bespoke game mechanics can authentically represent and deeply resonate with your brand's essence, I'd love to brainstorm the possibilities with you. Let's discover the unique gameplay that lies within your brand's core.

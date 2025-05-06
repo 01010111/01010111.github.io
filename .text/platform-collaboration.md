@@ -17,6 +17,8 @@ What's been particularly valuable is how we've integrated the games directly int
 
 Beyond just the games themselves, we've also focused on how it fits into their broader content strategy. The end-screens of the games provide the typical post-game feedback, but they also include helpful links to other daily content on offer, encouraging users to explore more of their platform. This long-term collaboration highlights the power of a well-integrated web game in enhancing user engagement within your existing platform.
 
+You can check out Shapeshifter - a game made for Blue Ocean Brain - [Here &rarr;](arcade.html)
+
 ### Ready to Explore the Possibilities?
 
 Ultimately, my aim is to create engaging web games that not only provide a great experience for your audience but also integrate seamlessly with your existing platform and workflows. By focusing on clear communication, respecting your team's processes, and strategically leveraging your current systems, I'm here to be a reliable partner in bringing your interactive ideas to life.
