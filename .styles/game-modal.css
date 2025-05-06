@@ -1,0 +1,91 @@
+dialog.game-modal {
+	width: calc(100vw - 64px);
+	height: calc(100svh - 64px);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: 0 0;
+	transform: translate(-50%, -50%);
+	outline: none;
+	border: none;
+	background-color: var(--col-primary-dark);
+	box-shadow: var(--shadow-dark), var(--shadow-dark);
+
+	& .modal-header {
+		position: absolute;
+		width: 100%;
+		border-radius: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 48px;
+		padding: 0 0 0 32px;
+		display: flex;
+		justify-content: space-between;
+
+		& .modal-title {
+			display: flex;
+			align-items: center;
+			color: var(--col-primary-light);
+		}
+
+		& .modal-close-btn {
+			background-color: var(--col-secondary-dark);
+			width: 48px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			&::after {
+				content: '✖';
+			}
+		}
+	}
+
+	& .modal-content {
+		background-color: var(--col-black);
+		position: absolute;
+		width: 100%;
+		border-radius: 0;
+		top: 48px;
+		left: 0;
+		right: 0;
+		bottom: 32px;
+		padding: 0;
+		overflow: hidden;
+
+		& iframe {
+			width: 100%;
+			height: calc(100% + 1px);
+			margin: 0;
+			border: none;
+		}
+	}
+
+	& .modal-footer {
+		position: absolute;
+		width: 100%;
+		border-radius: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 32px;
+		padding: 0 32px;
+		color: var(--col-secondary-dark);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	dialog.game-modal {
+		width: 100vw;
+		height: 100svh;
+		max-width: 100vw;
+		max-height: 100svh;
+	}
+}

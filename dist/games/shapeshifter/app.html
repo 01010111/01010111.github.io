@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game</title>
+    <link rel="stylesheet" href="fonts.css?version=1710300926732">
+
+    <!-- Dependencies -->
+    <script src="pixi.js46/dist/pixi.min.js?version=1710300926732"></script>
+    <script src="gsap/dist/gsap.min.js?version=1710300926732"></script>
+    <script src="gsap/dist/EasePack.min.js?version=1710300926732"></script>
+
+    <!-- Game -->
+    <script src="howler/dist/howler.min.js?version=1710300926732"></script>
+    <script src="fontfaceobserver/fontfaceobserver.js?version=1710300926732"></script>
+    <script src="Framework.js?version=1710300926732"></script>
+    <script src="keymaster.js?version=1710300926732"></script>
+    <script src="Surabikku.js?version=1710300926732"></script>
+</head>
+<style>
+    body {
+        background-color: rgb(56, 3, 160);
+    }
+
+    #game_container {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 1280px) {
+        #game_container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            height: 960px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 12px 64px rgba(0, 0, 100, 0.5);
+        }
+    }
+</style>
+
+<body>
+    <div id='game_container'></div>
+    <script>
+        function init(config) {
+            var game = new Game.Surabikku(config);
+            Play.Framework.init(game);
+        }
+        function get_framework() { return Play.Framework; }
+        init({});
+    </script>
+</body>
+
+</html>

@@ -24,6 +24,7 @@
 
 		& .arcade-header-logo {
 			margin-right: 16px;
+			cursor: pointer;
 		}
 
 	}
@@ -51,11 +52,17 @@
 				width: 340px;
 				height: 240px;
 				background-color: grey;
+				background-image: var(--bg-image);
+				background-size: cover;
+				background-position: center;
+				box-shadow: var(--shadow-dark);
+				z-index: 0;
 			}
 
 			& .arcade-game-info {
 				color: var(--col-primary-light);
 				font-size: 16px;
+				z-index: 1;
 
 				& .small {
 					color: var(--col-secondary-dark);

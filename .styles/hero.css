@@ -10,9 +10,9 @@ section.hero {
 	padding: 0;
 
 	& .hero-photo {
-		width: 60%;
+		width: 50%;
 		height: 100%;
-		background-image: url(https://placecats.com/1920/1080);
+		background-image: url(images/me.png);
 		background-size: cover;
 		background-position: center;
 	}
@@ -58,7 +58,7 @@ section.hero {
 		& .hero-photo {
 			width: 100%;
 			height: 50%;
-			background-image: url(https://placecats.com/1920/1080);
+			background-image: url(images/me.png);
 			background-size: cover;
 			background-position: center;
 		}

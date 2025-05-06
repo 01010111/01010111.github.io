@@ -1,0 +1,47 @@
+<dialog id="game-modal" class="game-modal">
+	<section class="modal-header">
+		<div class="modal-title" id="game-title">Game Title</div>
+		<div class="modal-close-btn" onclick="close_game_modal()"></div>
+	</section>
+	<section class="modal-content" id="game-content"></section>
+	<section class="modal-footer" id="game-credits"></section>
+</dialog>
+<script defer>
+	const game_modal = document.querySelector('#game-modal');
+	const game_title = document.querySelector('#game-title');
+	const game_content = document.querySelector('#game-content')
+	const game_credits = document.querySelector('#game-credits');
+	function open_game_modal(data) {
+		game_title.innerText = data.title;
+		game_credits.innerText = data.credits;
+
+		let iframe = document.createElement('iframe');
+		iframe.src = data.url;
+		game_content.appendChild(iframe);
+
+		game_modal.showModal();
+		game_modal.animate([
+			{ scale: '0' },
+			{ scale: '1' },
+		], {
+			duration: 200,
+			easing: 'ease-out',
+			fill: "forwards",
+		});
+	}
+	function close_game_modal() {
+		game_modal.animate([
+			{ scale: '0' },
+			{ scale: '1' },
+		], {
+			duration: 200,
+			easing: 'ease-out',
+			fill: "forwards",
+			direction: "reverse"
+		});
+		window.setTimeout(() => {
+			game_content.removeChild(game_content.firstChild);
+			game_modal.close();
+		}, 200);
+	}
+</script>

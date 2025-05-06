@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Oreo Stacker</title>
+	<style>
+		* {
+			padding:0;
+			margin:0;
+			overflow: hidden;
+			image-rendering: -webkit-optimize-contrast;
+		}
+		body {
+			background-color: #004080;
+		}
+		iframe {
+			display: block;
+			position: relative;
+			top: calc(50vh - 300px);
+			width: 512px;
+			height: 640px;
+			margin: auto;
+			border: none;
+			box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.5);
+			border-radius: 32px;
+		}
+		@media only screen and (max-width: 512px) {
+			iframe {
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border: none;
+				border-radius: 0;
+			}
+		}
+		.container {
+			height: 100vh;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class='container'><iframe src="app.html"></iframe></div>
+</body>
+</html>

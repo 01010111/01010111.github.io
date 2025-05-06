@@ -5,7 +5,7 @@
 
 .partners-marquee {
 	position: absolute;
-	left: -100%;
+	left: -150%;
 	background-image: url(images/partner-logos.svg);
 	width: 400%;
 	height: 128px;

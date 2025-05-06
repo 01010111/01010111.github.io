@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Unboxed Technology presents Skill Swap!" />
+	<meta property="og:url" content="http://unboxedtechnology.com/skill-swap-game/" />
+	<meta property="og:image" content="preview.png" />
+	<meta property="og:description" content="See how many skills you can unpack with Skill Swap!" />
+	<title>Skill Swap!</title>
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=block" rel="stylesheet">
+	<script src="pixi.min.js"></script>
+	<script src="howler.min.js"></script>
+	<script src="app.min.js" defer></script>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.container {
+			width: 100%;
+			height: 100%;
+		}
+		.font {
+			font-family: 'Lilita One';
+			position: absolute;
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id='game' class='container'>
+		<div class='font'>Skill Swap!</div>
+	</div>
+	<script>
+		window.fbAsyncInit = function() {
+		FB.init({
+			appId            : '527260175251079',
+			autoLogAppEvents : true,
+			xfbml            : true,
+			version          : 'v6.0'
+			});
+		};
+	</script>
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+</body>
+</html>

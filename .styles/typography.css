@@ -38,3 +38,12 @@ a {
 		font-size: 16px;
 	}
 }
+
+span.emphasis {
+	color: var(--col-secondary-dark);
+	font-weight: 700;
+}
+
+span.larger {
+	font-size: 28px;
+}

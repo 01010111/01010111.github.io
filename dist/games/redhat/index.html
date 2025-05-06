@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			background: url(bg.png);
+			background-size: cover;
+		}
+		iframe {
+			width: 144px;
+			height: 256px;
+			position: absolute;
+			/*top: calc(50vh - 128px);*/
+			left: calc(50vw - 72px);
+			box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<iframe id="game-container" src="app.html" frameborder="0"></iframe>
+	<script>
+		function resize() {
+			let window_width = window.innerWidth;
+			let window_height = window.innerHeight;
+			let game_width = 144;
+			let game_height = 256;
+			let scale = 2;
+			if (window_width > 480) {
+				while (game_width * scale < window_width && game_height * scale < window_height) scale++;
+				scale -= 1;
+			}
+			else {
+				scale = Math.min(window_width/game_width,window_height/game_height);
+			}
+			let game_container = document.getElementById('game-container');
+			game_container.style.transform = `scale(${scale})`;
+			game_container.style.top = `${window_height/2 - 128}px`;
+		}
+		window.onresize = resize;
+		resize();
+	</script>
+</body>
+</html>

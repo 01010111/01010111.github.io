@@ -18,7 +18,7 @@
 					<h3>Arcade</h3>
 					<p>Click on a thumbnail to play a game!</p>
 				</section>
-				<div class="arcade-header-logo">
+				<div class="arcade-header-logo" onclick="window.open('index.html', '_self')">
 					<svg width="48" height="45" viewBox="0 0 48 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4487 0.424357C25.051 0.600245 26.2073 2.04174 26.0315 3.64403L24.4782 17.7939C24.348 18.9798 23.5092 19.9671 22.3599 20.2871C21.2106 20.6071 19.9822 20.1954 19.2579 19.2474L15.2648 14.0215L14.3135 20.7089C14.1455 21.8899 13.2756 22.8498 12.1168 23.133C10.958 23.4162 9.74351 22.9657 9.04971 21.9953L0.544636 10.0996C-0.392864 8.78833 -0.089883 6.96536 1.22136 6.02786C2.53261 5.09036 4.35558 5.39334 5.29308 6.70459L9.56057 12.6734L10.4665 6.30515C10.6322 5.14084 11.4804 4.18968 12.6182 3.89238C13.7561 3.59509 14.9612 4.00973 15.6752 4.9442L19.4711 9.91208L20.2291 3.00709C20.4049 1.4048 21.8464 0.24847 23.4487 0.424357Z" fill="#DBFFFD"/>
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M33.253 21.5495L33.2335 21.5385C32.4723 21.1088 32.0533 20.4004 31.8567 19.6666L28.113 5.69468C27.9163 4.96086 27.925 4.13786 28.3693 3.38514L28.3807 3.36583L28.3926 3.34701C28.8467 2.62838 29.546 2.22018 30.2839 2.02247L36.3428 0.398987C38.323 -0.13159 40.1858 -0.169442 41.8063 0.50719C43.505 1.18992 44.5968 2.52236 45.0755 4.30898C45.3876 5.47368 45.3529 6.63615 44.9154 7.74162C44.8796 7.83529 44.8413 7.92773 44.8005 8.01892C44.7951 8.0309 44.7706 8.12296 44.8172 8.26891C44.8639 8.4149 44.9369 8.47432 44.9468 8.48016C45.1559 8.60239 45.3566 8.73892 45.5487 8.88955C46.5848 9.68481 47.2553 10.7828 47.6035 12.0823C48.0953 13.9179 47.8109 15.6631 46.6707 17.156C45.5828 18.5975 43.912 19.5269 41.8762 20.0724L35.5729 21.7613C34.8351 21.959 34.0254 21.9552 33.2729 21.56L33.253 21.5495ZM41.2244 12.6765L41.214 12.6719C41.0376 12.595 40.5577 12.5143 39.5563 12.7826L36.5875 13.5781L37.1614 15.7198L40.1301 14.9243C41.1623 14.6477 41.553 14.3372 41.6688 14.1864C41.7121 14.13 41.744 14.064 41.7579 13.9613C41.7732 13.8489 41.7701 13.665 41.6945 13.3831C41.5532 12.8555 41.3595 12.733 41.2341 12.6805L41.2244 12.6765ZM35.1836 8.33839L37.737 7.65421C38.6873 7.39957 39.0929 7.09699 39.2434 6.91013C39.3284 6.80467 39.4181 6.64629 39.3026 6.21541C39.2378 5.97349 39.1609 5.84576 39.1064 5.77957C39.0576 5.72047 39.0046 5.68254 38.927 5.65352C38.7095 5.57217 38.2028 5.51653 37.2338 5.77618L34.6803 6.46036L35.1836 8.33839Z" fill="#DBFFFD"/>
@@ -28,46 +28,120 @@
 				</div>
 			</div>
 			<section class="arcade-games">
-				<div class="arcade-game">
-					<div class="arcade-game-image"></div>
+			
+				<div class="arcade-game" onclick="open_game_modal({
+					title: 'Skill Swap',
+					credits: 'Voiceover by Katie Lazar',
+					url: 'games/skill-swap/index.html'
+				})">
+					<div class="arcade-game-image" style="--bg-image: url(games/skill-swap/thumbnail.png)"></div>
 					<div class="arcade-game-info">
-						Game title<br/><span class="small">made for Client Name</span>
+						Skill Swap<br/><span class="small">made for Unboxed Technology</span>
 					</div>
 				</div>
-				<div class="arcade-game">
-					<div class="arcade-game-image"></div>
+			
+				<div class="arcade-game" onclick="open_game_modal({
+					title: 'Asurion Quiz',
+					credits: 'Art provided by Asurion',
+					url: 'games/asurion/app.html'
+				})">
+					<div class="arcade-game-image" style="--bg-image: url(games/asurion/thumbnail.png)"></div>
 					<div class="arcade-game-info">
-						Game title<br/><span class="small">made for Client Name</span>
+						Ace the Asurion Story<br/><span class="small">made for Asurion</span>
 					</div>
 				</div>
-				<div class="arcade-game">
-					<div class="arcade-game-image"></div>
+			
+				<div class="arcade-game" onclick="open_game_modal({
+					title: 'Cookie Stacker',
+					credits: '',
+					url: 'games/oreo/index.html'
+				})">
+					<div class="arcade-game-image" style="--bg-image: url(games/oreo/thumbnail.png)"></div>
 					<div class="arcade-game-info">
-						Game title<br/><span class="small">made for Client Name</span>
+						Cookie Stacker<br/><span class="small">made for The Martin Agency</span>
 					</div>
 				</div>
-				<div class="arcade-game">
-					<div class="arcade-game-image"></div>
+			
+				<div class="arcade-game" onclick="open_game_modal({
+					title: 'Level Up League',
+					credits: 'Art by Jude Buffum',
+					url: 'games/redhat/app.html'
+				})">
+					<div class="arcade-game-image" style="--bg-image: url(games/redhat/thumbnail.png)"></div>
 					<div class="arcade-game-info">
-						Game title<br/><span class="small">made for Client Name</span>
+						Level Up League<br/><span class="small">made for Red Hat</span>
 					</div>
 				</div>
-				<div class="arcade-game">
-					<div class="arcade-game-image"></div>
+			
+				<div class="arcade-game" onclick="open_game_modal({
+					title: 'Shapeshifter',
+					credits: '',
+					url: 'games/shapeshifter/app.html'
+				})">
+					<div class="arcade-game-image" style="--bg-image: url(games/shapeshifter/thumbnail.png)"></div>
 					<div class="arcade-game-info">
-						Game title<br/><span class="small">made for Client Name</span>
+						Shapeshifter<br/><span class="small">made for Blue Ocean Brain</span>
 					</div>
 				</div>
-				<div class="arcade-game">
-					<div class="arcade-game-image"></div>
+			
+				<div class="arcade-game" onclick="window.open('https://01010111.itch.io/')">
+					<div class="arcade-game-image" style="--bg-image: url(games/itch-thumbnail.png)"></div>
 					<div class="arcade-game-info">
-						Game title<br/><span class="small">made for Client Name</span>
+						Check out my personal games!<br/><span class="small">at itch.io &rarr;</span>
 					</div>
 				</div>
 			</section>
 			<section class="arcade-footer">
-				<div class="btn right" onclick="window.open('index.html')">&larr; Go Back</div>
+				<div class="btn right" onclick="window.open('index.html', '_self')">&larr; Go Back</div>
 			</section>
+			<dialog id="game-modal" class="game-modal">
+				<section class="modal-header">
+					<div class="modal-title" id="game-title">Game Title</div>
+					<div class="modal-close-btn" onclick="close_game_modal()"></div>
+				</section>
+				<section class="modal-content" id="game-content"></section>
+				<section class="modal-footer" id="game-credits"></section>
+			</dialog>
+			<script defer>
+				const game_modal = document.querySelector('#game-modal');
+				const game_title = document.querySelector('#game-title');
+				const game_content = document.querySelector('#game-content')
+				const game_credits = document.querySelector('#game-credits');
+				function open_game_modal(data) {
+					game_title.innerText = data.title;
+					game_credits.innerText = data.credits;
+			
+					let iframe = document.createElement('iframe');
+					iframe.src = data.url;
+					game_content.appendChild(iframe);
+			
+					game_modal.showModal();
+					game_modal.animate([
+						{ scale: '0' },
+						{ scale: '1' },
+					], {
+						duration: 200,
+						easing: 'ease-out',
+						fill: "forwards",
+					});
+				}
+				function close_game_modal() {
+					game_modal.animate([
+						{ scale: '0' },
+						{ scale: '1' },
+					], {
+						duration: 200,
+						easing: 'ease-out',
+						fill: "forwards",
+						direction: "reverse"
+					});
+					window.setTimeout(() => {
+						game_content.removeChild(game_content.firstChild);
+						game_modal.close();
+					}, 200);
+				}
+			</script>
+			
 		</section>
 </body>
 </html>

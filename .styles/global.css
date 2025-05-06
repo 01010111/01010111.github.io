@@ -29,7 +29,3 @@ body {
 	width: 100vw;
 }
 
-span.emphasis {
-	color: var(--col-secondary-dark);
-	font-weight: 700;
-}

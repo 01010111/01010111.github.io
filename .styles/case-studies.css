@@ -1,11 +1,14 @@
 .case-studies-container {
 	display: flex;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 16px;
 
 	& .case-study {
 		position: relative;
 		background-image: var(--bg-image);
+		background-size: cover;
+		background-position: center;
 		border-radius: 8px;
 		width: 300px;
 		height: 420px;

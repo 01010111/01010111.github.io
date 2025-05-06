@@ -45,10 +45,29 @@ section.case-study {
 		font-size: 24px;
 	}
 
+	& h3 {
+		margin: 32px auto;
+		text-transform: none;
+
+		&::before {
+            display: inline-block;
+            content: '';
+            width: 169px;
+            height: 8px;
+            margin-right: 16px;
+            background-image: url(images/squiggle-primary.svg);
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
 	& p {
 		font-size: 16px;
 		font-weight: 400;
 		margin-bottom: 16px;
+		color: var(--col-black);
 	}
 
 	& img {
@@ -76,6 +95,16 @@ section.case-study {
 @media screen and (max-width: 1280px) {
 	section.case-study {
 		width: 100%;
+
+		& h3 {
+			&::before {
+				display: none;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
 
 		& img {
 

@@ -1,0 +1,263 @@
+
+[
+	{
+		"question": "What’s Asurion’s commitment to customers??",
+		"answers": [
+			{
+				"text": "We help make your life easier by unlocking the potential of technology",
+				"response": "You got it! Our commitment is anchored in our customers’ desire for ease. When we stay true to it we give them exactly what they need. Bravo!",
+				"correct": true
+			},
+			{
+				"text": "We get your life back on track\nthrough tech",
+				"response": "We do more than just fix tech. We help customers get more from it so their lives are a little easier and a lot more amazing.",
+				"correct": false
+			},
+			{
+				"text": "We show you what’s possible today and tomorrow with technology",
+				"response": "Nice try. Although “discovery” is an element of our commitment, it isn’t the only one. You’re missing a key benefit that customers deeply value.",
+				"correct": false
+			},
+			{
+				"text": "We fix it so your life is perfect",
+				"response": "While we can’t promise perfection, we hold the key to something better…",
+				"correct": false
+			}
+		],
+		"illustration": "girl_jumping"
+	},
+	{
+		"question": "Why do our Experience Principles matter?",
+		"answers": [
+			{
+				"text": "They guide specs and requirements for product & service innovation",
+				"response": "Not quite! They could apply to this, but they inform so much more. ",
+				"correct": false
+			},
+			{
+				"text": "They come together to guide everything we create – from experiences to processes to communications.",
+				"response": "That’s right! They’re the building blocks that focus our Story, making it consistent across the organization and relevant to our customers. They describe us when we’re at our best.",
+				"correct": true
+			},
+			{
+				"text": "They are the creative brief for external\nad campaigns",
+				"response": "Not quite! They are internal guardrails for our organization, that enable everything that faces customers to be clear, compelling and consistent.",
+				"correct": false
+			},
+			{
+				"text": "They give us a platter of features to choose from when designing a service",
+				"response": "Try again! Unless all of our principles are guiding our design, we would have disjointed experiences and our Experience Principles enable consistency.",
+				"correct": false
+			}
+		],
+		"illustration": "army_knife"
+	},
+	{
+		"question": "See if you can go three for three. Which one of these nail all three of our Experience Principles:",
+		"answers": [
+			{
+				"text": "Remarkably Human, Delightfully Simple and Actually Helpful",
+				"response": "Exactly! These principles define what’s different about the Asurion experience. They guide how our brand comes to life and are relevant to both our partners and consumers.",
+				"correct": true
+			},
+			{
+				"text": "Unexpectedly Kind, Extremely Easy, and Intelligently Powered",
+				"response": "Let’s try again. Our experience isn’t unexpected. Plus, you’re missing the element of “discovery.” And while Intelligence does power our service, this is about our customers.",
+				"correct": false
+			},
+			{
+				"text": "Truly Personable, Totally Effortless, and Always Accommodating",
+				"response": "Not quite. Our experience goes beyond being personable, “Totally Effortless” discounts our hard work and “Always Accommodating” is a bit too deferential.",
+				"correct": false
+			},
+			{
+				"text": "Amazingly Friendly, Deeply Honest, and Noticeably Smart ",
+				"response": "Try again! While we are a friendly bunch, “Amazingly Friendly” is overkill. “Deeply Honest” is a tad cynical and not authentic to us. “Noticeably Smart”…a bit braggadocious, don’t you think?",
+				"correct": false
+			}
+		],
+		"illustration": "tech_heart"
+	},
+	{
+		"question": "You’ve got this! Fill in our Experience Principle… \nRemarkably Human: “We are powered by people who _______”",
+		"answers": [
+			{
+				"text": "Take pride in taking care of you",
+				"response": "Aced it! This is core to what drives us as employees and makes Asurion different.",
+				"correct": true
+			},
+			{
+				"text": "Know everything about technology",
+				"response": "While we know our stuff, being Remarkably Human is about showing our heart and being humble as we help our customers.",
+				"correct": false
+			},
+			{
+				"text": "Love helping people more than technology itself",
+				"response": "Close, but not quite! The first half is true, but not at the expense of technology.",
+				"correct": false
+			},
+			{
+				"text": "Are actually highly emotive robots",
+				"response": "You’re a clever one. But, try again!",
+				"correct": false
+			}
+		],
+		"illustration": "helpful_expert"
+	},
+	{
+		"question": "Which one is NOT Remarkably Human?",
+		"answers": [
+			{
+				"text": "Being optimistic",
+				"response": "Not quite. Our people are optimistic about technology and what it can do for our customers.",
+				"correct": false
+			},
+			{
+				"text": "Treating people like people",
+				"response": "Try again! Our people get it. They’re empathetic, giving customers the relevant help they need.",
+				"correct": false
+			},
+			{
+				"text": "Creating real moments of connection",
+				"response": "Correction. Connections are core to our experience, turning interactions into relationships.",
+				"correct": false
+			},
+			{
+				"text": "Downplaying tech expertise to be\nmore relatable ",
+				"response": "Remarkable! You got it. Being human doesn’t have to mean being so humble that customers question our expertise.",
+				"correct": true
+			}
+		],
+		"illustration": "heart"
+	},
+	{
+		"question": "Now it’s your turn. Fill in our Experience Principle… \nDelightfully Simple: “We make it easy for you to _______”",
+		"answers": [
+			{
+				"text": "Discover how incredible\ntechnology can be",
+				"response": "You’re incredible! We remove complexity so customers can get more from the tech they love and rely on.",
+				"correct": true
+			},
+			{
+				"text": "Solve all of life’s problems",
+				"response": "That’s a bit of a reach. We focus on the possibilities of people’s technology.",
+				"correct": false
+			},
+			{
+				"text": "Learn the ins and outs of your tech",
+				"response": "Close, but this one’s about making the “a-ha” moments possible.",
+				"correct": false
+			},
+			{
+				"text": "Be a tech genius",
+				"response": "Sorry, but this one’s about customers learning what they want, not becoming the next Einstein.",
+				"correct": false
+			}
+		],
+		"illustration": "stairs"
+	},
+	{
+		"question": "Which one is NOT Delightfully Simple?",
+		"answers": [
+			{
+				"text": "Removing complexity",
+				"response": "Try again! Simplicity isn’t complex. We make it easier for customers to get what they want.",
+				"correct": false
+			},
+			{
+				"text": "Just “making it work”",
+				"response": "Try again! Asurion can indeed take care of it for you, quickly and easily.",
+				"correct": false
+			},
+			{
+				"text": "Enabling discovery",
+				"response": "Not quite. Delight goes beyond ease, to the discovery of what lies behind the complexity. ",
+				"correct": false
+			},
+			{
+				"text": "Ending a call as fast as possible",
+				"response": "Delightful! Simplicity doesn’t mean speed. Understanding comes first, and if that requires more time then we make sure to give it. It’s what sets us apart.",
+				"correct": true
+			}
+		],
+		"illustration": "zen"
+	},
+	{
+		"question": "Complete me. Fill in our Experience Principle… \nActually Helpful: “We understand what it takes to make your tech work better _________”",
+		"answers": [
+			{
+				"text": "Because we’re on top of tech",
+				"response": "That's actually right! We want to convey our expertise and show that we know what’s next for tech and the tech help needs that will come with it. Good job!",
+				"correct": true
+			},
+			{
+				"text": "When you can’t",
+				"response": "That may be true, but this one speaks to our expertise too.",
+				"correct": false
+			},
+			{
+				"text": "Than ever",
+				"response": "Not quite. This one speaks to the “why” behind our understanding.",
+				"correct": false
+			},
+			{
+				"text": "Because we know it all ",
+				"response": "Try again! This one means staying in the know without being a know-it-all.",
+				"correct": false
+			}
+		],
+		"illustration": "tech_pit_crew"
+	},
+	{
+		"question": "Which one is NOT Actually Helpful?",
+		"answers": [
+			{
+				"text": "Being personal",
+				"response": "Try again! We know, understand and remember our customers, delivering a unique experience.",
+				"correct": false
+			},
+			{
+				"text": "Creating a seamless experience",
+				"response": "This one’s right. We want to be the “one-stop-shop” for any tech help need.",
+				"correct": false
+			},
+			{
+				"text": "Drawing on past experiences to help",
+				"response": "This powers our expertise. It’s part of being Actually Helpful. Try again!",
+				"correct": false
+			},
+			{
+				"text": "Overusing technical terms and acronyms",
+				"response": "Acronyms are far from Actually Helpful. We don’t have to talk in a technical way to show that we’re on top of tech. You got it!",
+				"correct": true
+			}
+		],
+		"illustration": "light_bulb"
+	},
+	{
+		"question": "Which of these statements about Asurion experts is true?",
+		"answers": [
+			{
+				"text": "All of our experts set aside dedicated time to keep their tech skills strong ",
+				"response": "We keep our training on point. But that’s not all…",
+				"correct": false
+			},
+			{
+				"text": "85% of the US population is within 30 miles of an Asurion expert",
+				"response": "That’s right, but also…",
+				"correct": false
+			},
+			{
+				"text": "Our Asurion experts took 35 million US calls in 2018",
+				"response": "Yes and…",
+				"correct": false
+			},
+			{
+				"text": "All of the above",
+				"response": "That’s right! All of the above are true. Goes to show just how excellent our experts are at delivering on our commitment to customers.",
+				"correct": true
+			}
+		],
+		"illustration": "expert_puzzle"
+	}
+]
